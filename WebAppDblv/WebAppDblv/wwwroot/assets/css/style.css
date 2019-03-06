@@ -1847,9 +1847,9 @@ footer {
 	color:#7e7e7e;
 }
 
-footer.footer {
-	background:#3a3a3a;
-}
+    footer.footer {
+        background: #32327A;
+    }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 	color:#e8e8e8;
@@ -1943,8 +1943,8 @@ footer ul li a {
 
 /* footer social */
 ul.social-network {
-	list-style:none;
-	margin:0;
+	//list-style:none;
+	//margin:0;
 }
 
 ul.social-network li {
