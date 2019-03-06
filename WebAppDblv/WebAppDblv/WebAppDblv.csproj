@@ -561,10 +561,13 @@
 
 
   <ItemGroup>
-    <PackageReference Include="bootstrap" Version="4.2.1" />
+    <PackageReference Include="bootstrap" Version="4.3.1" />
+    <PackageReference Include="Dapper" Version="1.60.1" />
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
   </ItemGroup>
 
 </Project>
