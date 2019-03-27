@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Doblevê Soluções em T.I. &amp; Negócios</title>
+
+
+    <environment include="Development">
+        <link href="~/Content/assets/css/bootstrap.css" rel="stylesheet">
+        <link href="~/Content/assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="~/Content/assets/css/docs.css" rel="stylesheet">
+        <link href="~/Content/assets/css/prettyPhoto.css" rel="stylesheet">
+        <link href="~/Content/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        <link href="~/Content/assets/css/flexslider.css" rel="stylesheet" />
+        <link href="~/Content/assets/css/refineslide.css" rel="stylesheet" />
+        <link href="~/Content/assets/css/font-awesome.css" rel="stylesheet" />
+        <link href="~/Content/assets/css/animate.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700" rel="stylesheet">
+        <link href="~/Content/assets/css/style.css" rel="stylesheet" />
+        <link href="~/Content/assets/color/default.css" rel="stylesheet" />
+        <link href="~/Content/assets/css/dblv.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+        <link rel="shortcut icon" href="~/Content/assets/ico/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/Content/assets/ico/apple-touch-icon-144-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Content/assets/ico/apple-touch-icon-114-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Content/assets/ico/apple-touch-icon-72-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" href="~/Content/assets/ico/apple-touch-icon-57-precomposed.png" />
+
+    </environment>
+
+    </head>
+<body>
+    <div id="wrapper">
+
+        <div class="container">
+            @RenderPage("~/Views/Shared/_Menu.cshtml")
+        </div>
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <div class="container">
+            @RenderPage("~/Views/Shared/_Footer.cshtml")
+        </div>
+    </div>
+
+    <environment include="Development">
+
+        <script src="~/Scripts/jquery-3.3.1.js"></script>
+        <script src="~/Scripts/bootstrap.bundle.js"></script>
+        <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+        <script src="~/Content/assets/js/jquery.js"></script>
+        <script src="~/Content/assets/js/modernizr.js"></script>
+        <script src="~/Content/assets/js/jquery.easing.1.3.js"></script>
+        <script src="~/Content/assets/js/google-code-prettify/prettify.js"></script>
+        <script src="~/Content/assets/js/bootstrap.js"></script>
+        <script src="~/Content/assets/js/jquery.prettyPhoto.js"></script>
+        <script src="~/Content/assets/js/portfolio/jquery.quicksand.js"></script>
+        <script src="~/Content/assets/js/portfolio/setting.js"></script>
+        <script src="~/Content/assets/js/hover/jquery-hover-effect.js"></script>
+        <script src="~/Content/assets/js/jquery.flexslider.js"></script>
+        <script src="~/Content/assets/js/classie.js"></script>
+        <script src="~/Content/assets/js/cbpAnimatedHeader.min.js"></script>
+        <script src="~/Content/assets/js/jquery.refineslide.js"></script>
+        <script src="~/Content/assets/js/jquery.ui.totop.js"></script>
+        <!-- Template Custom Javascript File -->
+        <script src="~/Content/assets/js/custom.js"></script>
+    </environment>
+        <script src="~/Content/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+</body>
+</html>

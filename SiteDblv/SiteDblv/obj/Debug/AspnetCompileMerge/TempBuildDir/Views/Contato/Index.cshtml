@@ -1,0 +1,186 @@
+﻿
+@model SiteDblv.Models.Contato
+
+@{
+    ViewData["Title"] = "Contato";
+}
+
+<!-- Subhead
+================================================== -->
+<section id="subintro">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <h3><strong>Contate-nos</strong></h3>
+            </div>
+            <div class="span8">
+                <ul class="breadcrumb notop">
+                    <li>
+                        @Html.ActionLink("Início", "Index", "Home", null, new { @class = "navbar-brand" })
+                        <span class="divider">/</span>
+                    </li>
+                    <li class="active">Contate-nos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="maincontent">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <aside>
+                    <div class="widget">
+                        <h4>Get in touch with us</h4>
+                        <ul>
+                            <li>
+                                <label><strong>Fone : </strong></label>
+                                <p>
+                                    +55 11 98554-6222
+                                </p>
+                            </li>
+                            <li>
+                                <label><strong>Email : </strong></label>
+                                <p>
+                                    contato@dobleve.com.br
+                                </p>
+                            </li>
+                            <li>
+                                <label><strong>Endereço: </strong></label>
+                                <p>
+                                    Rua Itirapina, 690
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h4>Nossas redes sociais</h4>
+                        <ul class="social-links">
+                            <li><a href="#" title="Twitter"><i class="icon-bg-light icon-twitter icon-circled icon-1x active"></i></a></li>
+                            <li><a href="#" title="Facebook"><i class="icon-bg-light icon-facebook icon-circled icon-1x active"></i></a></li>
+                            <li><a href="#" title="Google plus"><i class="icon-bg-light icon-google-plus icon-circled icon-1x active"></i></a></li>
+                            <li><a href="#" title="Linkedin"><i class="icon-bg-light icon-linkedin icon-circled icon-1x active"></i></a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="span8">
+                <div class="span8">
+                    <h4><strong>Contato</strong></h4>
+                    <hr />
+                </div>
+                <div class="spacer30">
+                </div>
+                <div id="sendmessage">Sua mensagem foi enviada. Obrigado!</div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="row">
+                        <div class="span4 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Nome:" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="span4 form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="span8 form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="span8 form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                            <div class="text-center">
+                                <button class="btn btn-color btn-rounded" type="submit">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <fieldset>
+                    <legend>Entrar em contato</legend>
+
+                    <p>@Html.ValidationMessage("_FORM")</p>
+                    <div style="width:100%">
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <span>@Html.Label("Nome") </span>
+                                    <br />
+                                    @Html.TextBox("name", null, new { @class = "validation" })
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>@Html.Label("E-mail")</span>
+                                    <br />
+                                    @Html.TextBox("email", null, new { @class = "validation" })
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>@Html.Label("Fone")</span>
+                                    <br />
+                                    @Html.TextBox("fone", null, new { @class = "validation" })
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.DropDownListFor(model => Model.TipoMensagem,
+                                     new List<SelectListItem> {
+                                     new SelectListItem { Value = "0" , Text = "Contato", Selected = Model.TipoMensagem == 0 },
+                                     new SelectListItem { Value = "1" , Text = "Pedido", Selected = Model.TipoMensagem != 0 },
+                                     }, new { @class = "validation" })
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>@Html.Label("Assunto")</span>
+                                    <br />
+                                    @Html.DropDownListFor(model => Model.Assunto,
+                                        new List<SelectListItem> {
+                                        new SelectListItem { Value = "0" , Text = "Selecione", Selected = Model.Assunto == "0" },
+                                        new SelectListItem { Value = "1" , Text = "Site Moderno", Selected = Model.Assunto == "1" },
+                                        new SelectListItem { Value = "2" , Text = "Anúncio Google meu Negócio", Selected = Model.Assunto == "2" },
+                                        new SelectListItem { Value = "3" , Text = "Marketing Digital", Selected = Model.Assunto == "3" },
+                                        new SelectListItem { Value = "4" , Text = "Internet WI-FI", Selected = Model.Assunto == "4" },
+                                        new SelectListItem { Value = "5" , Text = "Mantutenção", Selected = Model.Assunto == "5" },
+                                        new SelectListItem { Value = "6" , Text = "IRPF", Selected = Model.Assunto == "6" },
+                                        new SelectListItem { Value = "7" , Text = "ERP", Selected = Model.Assunto == "7" },
+                                        new SelectListItem { Value = "8" , Text = "Sugestão", Selected = Model.Assunto == "8" },
+                                        new SelectListItem { Value = "9" , Text = "Pergunta", Selected = Model.Assunto == "9" },
+                                        new SelectListItem { Value = "10" , Text = "Reclamação", Selected = Model.Assunto == "10" },
+                                        }, new { @class = "" })
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    @Html.HiddenFor(model => Model.DataMensagem);
+                                    @Html.Label("Mensagem / Observações")<br />
+                                    @Html.TextArea("mensagem")
+                                    <br />
+                                <td />
+                            </tr>
+                        </table>
+                            <br />
+                            @Html.ActionLink("Voltar", "Index", "Home", null,
+                          new {@class= "btn btn-color btn-rounded" })
+                        }
+                        <input type="submit" value="Enviar" />
+                        @Html.ActionLink("Limpar", "Index", "Home", null,
+                      new {@class= "btn btn-color btn-rounded" })
+                        }
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</section>
