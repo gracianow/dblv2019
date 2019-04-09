@@ -18,6 +18,7 @@ namespace SiteDblv.Controllers
         {
             ViewBag.MostraSlide = false;
             var model = new Contato();
+            model.Nome = "";
             
             model.DataMensagem = DateTime.Now;
             int tipo = 0;

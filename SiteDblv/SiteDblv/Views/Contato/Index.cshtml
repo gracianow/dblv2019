@@ -68,7 +68,6 @@
                 <aside>
                 <div class="span8">
                     <h4><strong>Contato</strong></h4>
-                    <hr />
                 </div>
                 <div id="sendmessage">Sua mensagem foi enviada. Obrigado!</div>
                 <div id="errormessage"></div>
@@ -80,20 +79,15 @@
 
                             @Html.AntiForgeryToken()
                             @Html.ValidationSummary(true)
-                            <table style="width:100%">
-                                <tr>
-                                    <td>
                                         <div class="span8 form-group">
                                             @Html.LabelFor(model => model.Nome, new { @class = "col-md-2 control-label" })
                                             <div class="col-md-10">
-                                                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", @placeholder = "Nome" } })
+                                                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "col-md-10 form-control",
+                                                @placeholder = "Nome", @style = "width:85%"}})
                                                 @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
                                             </div>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+
                                         <div class="span4 form-group">
                                             @Html.LabelFor(model => model.Email, new { @class = "col-md-2 control-label" })
                                             <div class="col-md-10">
@@ -109,10 +103,7 @@
                                                 @Html.ValidationMessageFor(model => model.Fone, "", new { @class = "text-danger" })
                                             </div>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+
                                         <div class="span4 form-group">
                                             @Html.LabelFor(model => model.TipoMensagem, new { @class = "col-md-2 control-label" })
                                             <div class="col-md-10">
@@ -125,10 +116,6 @@
                                                 @Html.DropDownList("Assunto", null, new { htmlAttributes = new { @class = "form-control", @placeholder = "Assunto" } })
                                             </div>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
                                         <div class="span8 form-group">
                                             @Html.HiddenFor(model => model.DataMensagem)
                                             @Html.LabelFor(model => model.Mensagem, new { @class = "col-md-2 control-label" })
@@ -137,9 +124,6 @@
                                                 <br />
                                             </div>
                                         </div>
-                                    </td>
-                                </tr>
-                            </table>
                         }
                             <div class="text-center">
                                 @Html.ActionLink("Voltar", "Index", "Home", null, new { @class = "btn btn-color btn-rounded" }) &nbsp;

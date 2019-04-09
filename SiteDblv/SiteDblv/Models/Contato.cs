@@ -16,13 +16,13 @@ namespace SiteDblv.Models
 
         [Column("nome")]
         [Display(Name = "Nome")]
-        [StringLength(100, ErrorMessage = "Tem de ter no máximo {1} e no mínimo {4} carácter!")]
+        [StringLength(100, ErrorMessage = "Tem de ter no mínimo {2} carácteres!")]
         public string Nome { get; set; }
 
         [Column("email")]
         [Display(Name = "E-mail")]
         [DataType(DataType.EmailAddress)]
-        [StringLength(50, ErrorMessage = "Tem de ter no máximo {1} e no mínimo {2} carácter!")]
+        [StringLength(50, ErrorMessage = "Tem de ter no máximo {0} e no mínimo {1} carácter!")]
         public string Email { get; set; }
 
         [Column("fone")]
