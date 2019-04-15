@@ -2,7 +2,7 @@
 @model SiteDblv.Models.Contato
 
 @{
-    ViewData["Title"] = "Contato";
+    ViewBag.Title = "Contato";
 }
 
 <!-- Subhead
@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="span4">
-                <h3><strong>Contate-nos</strong></h3>
+                <h3><strong>@ViewBag.Title</strong></h3>
             </div>
             <div class="span8">
                 <ul class="breadcrumb notop">
@@ -65,122 +65,88 @@
                 </aside>
             </div>
             <div class="span8">
-                <div class="span8">
-                    <h4><strong>Contato</strong></h4>
-                    <hr />
-                </div>
-                <div class="spacer30">
-                </div>
-                <div id="sendmessage">Sua mensagem foi enviada. Obrigado!</div>
-                <div id="errormessage"></div>
-                <form action="" method="post" role="form" class="contactForm">
-                    <div class="row">
-                        <div class="span4 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Nome:" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="span4 form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="span8 form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="span8 form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-                            <div class="text-center">
-                                <button class="btn btn-color btn-rounded" type="submit">Send message</button>
-                            </div>
-                        </div>
+                <aside>
+                    <div class="span8">
+                        <h4><strong>Contato</strong></h4>
                     </div>
-                </form>
-                <fieldset>
-                    <legend>Entrar em contato</legend>
+                    <div id="sendmessage">Sua mensagem foi enviada. Obrigado!</div>
+                    <div id="errormessage"></div>
+                    <fieldset>
+                        <p>@Html.ValidationMessage("_FORM")</p>
+                        <div style="width:100%">
+                            @using (Html.BeginForm())
+                            {
 
-                    <p>@Html.ValidationMessage("_FORM")</p>
-                    <div style="width:100%">
-                        @using (Html.BeginForm())
-                        {
-                            @Html.AntiForgeryToken()
-                            @Html.ValidationSummary(true)
-                        <table style="width:100%">
-                            <tr>
-                                <td>
-                                    <span>@Html.Label("Nome") </span>
-                                    <br />
-                                    @Html.TextBox("name", null, new { @class = "validation" })
-                                    <br />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>@Html.Label("E-mail")</span>
-                                    <br />
-                                    @Html.TextBox("email", null, new { @class = "validation" })
-                                    <br />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>@Html.Label("Fone")</span>
-                                    <br />
-                                    @Html.TextBox("fone", null, new { @class = "validation" })
-                                    <br />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    @Html.DropDownListFor(model => Model.TipoMensagem,
-                                     new List<SelectListItem> {
-                                     new SelectListItem { Value = "0" , Text = "Contato", Selected = Model.TipoMensagem == 0 },
-                                     new SelectListItem { Value = "1" , Text = "Pedido", Selected = Model.TipoMensagem != 0 },
-                                     }, new { @class = "validation" })
-                                    <hr />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>@Html.Label("Assunto")</span>
-                                    <br />
-                                    @Html.DropDownListFor(model => Model.Assunto,
-                                        new List<SelectListItem> {
-                                        new SelectListItem { Value = "0" , Text = "Selecione", Selected = Model.Assunto == "0" },
-                                        new SelectListItem { Value = "1" , Text = "Site Moderno", Selected = Model.Assunto == "1" },
-                                        new SelectListItem { Value = "2" , Text = "Anúncio Google meu Negócio", Selected = Model.Assunto == "2" },
-                                        new SelectListItem { Value = "3" , Text = "Marketing Digital", Selected = Model.Assunto == "3" },
-                                        new SelectListItem { Value = "4" , Text = "Internet WI-FI", Selected = Model.Assunto == "4" },
-                                        new SelectListItem { Value = "5" , Text = "Mantutenção", Selected = Model.Assunto == "5" },
-                                        new SelectListItem { Value = "6" , Text = "IRPF", Selected = Model.Assunto == "6" },
-                                        new SelectListItem { Value = "7" , Text = "ERP", Selected = Model.Assunto == "7" },
-                                        new SelectListItem { Value = "8" , Text = "Sugestão", Selected = Model.Assunto == "8" },
-                                        new SelectListItem { Value = "9" , Text = "Pergunta", Selected = Model.Assunto == "9" },
-                                        new SelectListItem { Value = "10" , Text = "Reclamação", Selected = Model.Assunto == "10" },
-                                        }, new { @class = "" })
-                                    <hr />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    @Html.HiddenFor(model => Model.DataMensagem);
-                                    @Html.Label("Mensagem / Observações")<br />
-                                    @Html.TextArea("mensagem")
-                                    <br />
-                                <td />
-                            </tr>
-                        </table>
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true)
+                                <div class="span8 form-group">
+                                    @Html.LabelFor(model => model.Nome, new { @class = "col-md-2 control-label" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "col-md-10 form-control",
+                                        @placeholder = "Nome", @style = "width:80%"}})
+                                        @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="span4 form-group">
+                                    @Html.LabelFor(model => model.Email, new { @class = "col-md-2 control-label" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control ", @placeholder = "E-mail" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="span4 form-group">
+                                    @Html.LabelFor(model => model.Fone, new { @class = "col-md-2 control-label" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Fone, new { htmlAttributes = new { @class = "col-md-12 form-control", @placeholder = "Fone" } })
+                                        @Html.ValidationMessageFor(model => model.Fone, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="span4 form-group">
+                                    @Html.LabelFor(model => model.TipoMensagem, new { @class = "col-md-2 control-label" })
+                                    <div class="col-md-10">
+                                        @Html.DropDownList("TipoMensagem", null, new { htmlAttributes = new { @class = "col-md-10 form-control", @placeholder = " Tipo de Mensagem" } })
+                                    </div>
+                                </div>
+                                <div class="span4 form-group">
+                                    @Html.LabelFor(model => model.Assunto, new { @class = "col-md-2 control-label" })
+                                    <div class="col-md-10">
+                                        @Html.DropDownList("Assunto", null, new { htmlAttributes = new { @class = "col-md-10 form-control", @placeholder = "Assunto" } })
+                                    </div>
+                                </div>
+                                <div class="span8 form-group">
+                                    @Html.HiddenFor(model => model.DataMensagem)
+                                    @Html.LabelFor(model => model.Mensagem, new { @class = "col-md-2 control-label" })
+                                    <div class="">
+                                        @Html.TextAreaFor(model => model.Mensagem, new { htmlAttributes = new { @class = "col-md-12 form-control", @placeholder = "Mensagem" } })
+                                        <br />
+                                    </div>
+                                </div>
+                            }
+                            <div class="text-center">
+                                @Html.ActionLink("Voltar", "Index", "Home", null, new { @class = "btn btn-color btn-rounded" }) &nbsp;
+                                <button class="btn btn-color btn-rounded" type="submit">Enviar</button> &nbsp;
+                                @Html.ActionLink("Limpar", "Index", "Home", null, new { @class = "btn btn-color btn-rounded" })
+                            </div>
                             <br />
-                            @Html.ActionLink("Voltar", "Index", "Home", null,
-                          new {@class= "btn btn-color btn-rounded" })
-                        }
-                        <input type="submit" value="Enviar" />
-                        @Html.ActionLink("Limpar", "Index", "Home", null,
-                      new {@class= "btn btn-color btn-rounded" })
-                        }
-                    </div>
-                </fieldset>
+                            <br />
+                        </div>
+                    </fieldset>
+                </aside>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2867053-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2867053-3');
+</script>
+

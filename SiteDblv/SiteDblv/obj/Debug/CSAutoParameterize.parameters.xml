@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=sql5026.site4now.net;Initial Catalog=DB_A440D7_dblv;Persist Security Info=true;User ID=DB_A440D7_dblv_admin;Password=wcw1718v" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\git\\dblv2019\\SiteDblv\\SiteDblv\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="DadosDbContext-Web.config Connection String" description="DadosDbContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=sql5026.site4now.net;Initial Catalog=DB_A440D7_dblv;Persist Security Info=true;User ID=DB_A440D7_dblv_admin;Password=wcw1718v" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\git\\dblv2019\\SiteDblv\\SiteDblv\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DadosDbContext']/@connectionString" />
+  </parameter>
+</parameters>

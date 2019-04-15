@@ -50,3 +50,7 @@
     text-decoration: none;
     opacity: 0.8;
 }
+
+.contato_input {
+    width: 300px !important;
+}
