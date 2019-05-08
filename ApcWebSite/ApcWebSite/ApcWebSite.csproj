@@ -446,6 +446,7 @@
     <Content Include="BizPage_theme\lib\ionicons\fonts\ionicons.ttf" />
     <Content Include="BizPage_theme\lib\ionicons\fonts\ionicons.woff" />
     <Content Include="BizPage_theme\lib\owlcarousel\LICENSE" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

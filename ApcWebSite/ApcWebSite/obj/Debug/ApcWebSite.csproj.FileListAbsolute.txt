@@ -68,7 +68,6 @@ D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\Antlr3.Runtime.pdb
 D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\System.Diagnostics.DiagnosticSource.xml
 D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\git\dblv2019\ApcWebSite\ApcWebSite\obj\Debug\ApcWebSite.csprojAssemblyReference.cache
 D:\git\dblv2019\ApcWebSite\ApcWebSite\obj\Debug\ApcWebSite.csproj.CoreCompileInputs.cache
 D:\git\dblv2019\ApcWebSite\ApcWebSite\obj\Debug\ApcWebSite.csproj.CopyComplete
 D:\git\dblv2019\ApcWebSite\ApcWebSite\obj\Debug\ApcWebSite.dll
@@ -88,3 +87,5 @@ D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\Dapper.xml
 D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\EntityFramework.xml
 D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\EntityFramework.SqlServer.xml
 D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\Newtonsoft.Json.pdb
+D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\ApcWebSite.dll.CodeAnalysisLog.xml
+D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\ApcWebSite.dll.lastcodeanalysissucceeded
