@@ -87,5 +87,4 @@ D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\Dapper.xml
 D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\EntityFramework.xml
 D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\EntityFramework.SqlServer.xml
 D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\Newtonsoft.Json.pdb
-D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\ApcWebSite.dll.CodeAnalysisLog.xml
-D:\git\dblv2019\ApcWebSite\ApcWebSite\bin\ApcWebSite.dll.lastcodeanalysissucceeded
+D:\git\dblv2019\ApcWebSite\ApcWebSite\obj\Debug\ApcWebSite.csprojAssemblyReference.cache
