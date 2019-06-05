@@ -595,6 +595,8 @@
     <Content Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
     <Content Include="Views\SiteDetail\Index.cshtml" />
     <Content Include="Views\Contato\EmailEnviado.cshtml" />
+    <Content Include="Views\Contato\EmailRequest.cshtml" />
+    <Content Include="Views\Contato\ProcessRequest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

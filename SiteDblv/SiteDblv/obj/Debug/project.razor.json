@@ -1,7 +1,5 @@
 {
-  "ProjectFilePath": "d:\\git\\dblv2019\\SiteDblv\\SiteDblv\\SiteDblv.csproj",
-  "TargetFramework": "v4.6.1",
-  "TagHelpers": [],
+  "FilePath": "d:\\git\\dblv2019\\SiteDblv\\SiteDblv\\SiteDblv.csproj",
   "Configuration": {
     "ConfigurationName": "UnsupportedRazor",
     "LanguageVersion": "1.0",
@@ -10,5 +8,11 @@
         "ExtensionName": "UnsupportedRazorExtension"
       }
     ]
-  }
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": null,
+  "Documents": []
 }
