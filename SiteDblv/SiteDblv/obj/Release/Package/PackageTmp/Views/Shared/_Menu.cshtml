@@ -1,8 +1,4 @@
-﻿@{
-
-}
-
-<header>
+﻿<header>
     <!-- Navbar
     ================================================== -->
     <div class="row-fluid">
@@ -14,7 +10,8 @@
                             <!-- logo -->
                             <div class="logo">
                                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
-                                    <img class="" src="~/Content/assets/img/icons/dblv_logo_home_bco224x66.png" alt="" width="224px" height="66px" />
+                                    <img class="" src="~/Content/assets/img/icons/dblv_logo_home_bco224x66.png" 
+                                         alt="" style="width:224px; height:66px;" />
                                 </a>
                             </div>
                             <!-- end logo -->
@@ -38,11 +35,11 @@
                                                 @Html.ActionLink("Serviços", "Index", "Servicos", null, new { @class = "" })
                                             </li>
                                             <li>
-                                                @Html.ActionLink("Contato", "Index", "Construcao", null, new { @class = "" })
+                                                @Html.ActionLink("Contato", "Index", "Contato", null, new { @class = "" })
                                             </li>
-                                            <li>
+                                            @*<li>
                                                 @Html.ActionLink("Login", "Index", "Construcao", null, new { @class = "" })
-                                            </li>
+                                            </li>*@
                                         </ul>
                                     </nav>
                                 </div>

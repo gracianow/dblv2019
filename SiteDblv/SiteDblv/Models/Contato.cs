@@ -14,9 +14,6 @@ namespace SiteDblv.Models
         [Column("contato_id")]
         public int ContatoId { get; set; }
 
-        public string From { get; set; }
-        public string Body { get; set; }
-
         [Column("nome")]
         [Display(Name = "Nome")]
         [StringLength(100, ErrorMessage = "Tem de ter no mínimo {2} carácteres!")]

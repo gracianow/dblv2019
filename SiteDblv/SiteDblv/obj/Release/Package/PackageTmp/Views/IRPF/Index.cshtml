@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "IRPF 2019";
 }
 
 <!-- Subhead
@@ -14,7 +14,7 @@
             <div class="span8">
                 <ul class="breadcrumb notop">
                     <li>
-                        @Html.ActionLink("Início", "Index", "Home", null, new { @class = "navbar-brand"})
+                        @Html.ActionLink("Início", "Index", "Home", null, new { @class = "navbar-brand" })
 
                         <span class="divider">/</span>
                     </li>
@@ -29,15 +29,15 @@
         <div class="row">
             <div class="span6">
                 <h2>
-                    Seu <strong>IRPF</strong> via  
+                    Seu <strong>IRPF</strong> via
 
-                        WhatsApp <span>
-                            <img src="Content/assets/img/icons/whatsapp_icon.png" width="35px" height="35px" />
-                        </span>
-                        011 985546222
+                    WhatsApp <span>
+                        <img src="Content/assets/img/icons/whatsapp_icon.png" width="35px" height="35px" />
+                    </span>
+                    011 985546222
                 </h2>
                 <p>
-                    O imposto de Renda está cada vez mais digital e online, deixou de ser uma mera tarefa contábil para se tornar mais um serviço dd Tecnologia da Informação,
+                    O imposto de Renda está cada vez mais digital e online, deixou de ser uma mera tarefa contábil para se tornar mais um serviço da Tecnologia da Informação,
                     queremos que o preenchimento e entrega da sua declaração não seja algo difícil e as vezes obscuro.
 
                 </p>
@@ -83,11 +83,20 @@
         <div class="row">
             <div class="span12">
                 <div class="cta center">
-                    @Html.ActionLink("Confira", "Index", "Construcao", null, new { @class = "btn btn-large btn-rounded btn-color" })
+                    @Html.ActionLink("Confira", "Index", "Contato", null, new { @class = "btn btn-large btn-rounded btn-color" })
                 </div>
                 <br /><br />
             </div>
         </div>
-        </div>
+    </div>
 </section>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2867053-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2867053-3');
+</script>

@@ -151,7 +151,6 @@
     <Compile Include="Controllers\IRPFController.cs" />
     <Compile Include="Controllers\MarketingController.cs" />
     <Compile Include="Controllers\QuemSomosController.cs" />
-    <Compile Include="Controllers\SendMailerController.cs" />
     <Compile Include="Controllers\ServicosController.cs" />
     <Compile Include="Controllers\SiteDetailController.cs" />
     <Compile Include="Global.asax.cs">
@@ -160,7 +159,6 @@
     <Compile Include="Models\Contato.cs" />
     <Compile Include="Models\ContatoContext.cs" />
     <Compile Include="Models\ContatoRepositorio.cs" />
-    <Compile Include="Models\Email.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
     <Compile Include="Models\IContatoRepositorio.cs" />
     <Compile Include="Models\IndexAttribute.cs" />
@@ -533,7 +531,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\SmartAspNetProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -594,9 +592,6 @@
     <Content Include="Views\Shared\_Menu.cshtml" />
     <Content Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
     <Content Include="Views\SiteDetail\Index.cshtml" />
-    <Content Include="Views\Contato\EmailEnviado.cshtml" />
-    <Content Include="Views\Contato\EmailRequest.cshtml" />
-    <Content Include="Views\Contato\ProcessRequest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
