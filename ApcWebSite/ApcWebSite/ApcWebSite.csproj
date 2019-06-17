@@ -264,6 +264,7 @@
     <Content Include="Content\img\apc\crs_fdo_gde2.jpg" />
     <Content Include="Content\img\apc\crs_fdo_gde3.jpg" />
     <Content Include="Content\img\apc\crs_fdo_gde4.jpg" />
+    <Content Include="Content\img\apc\facts3.png" />
     <Content Include="Content\img\apc\logos\apc_logo.png" />
     <Content Include="Content\img\apc\logos\apc_logo.svg" />
     <Content Include="Content\img\apc\logos\apc_logo_480x73.png" />
@@ -273,6 +274,11 @@
     <Content Include="Content\img\apc\logos\apc_log_225x35_cor.png" />
     <Content Include="Content\img\apc\logos\apc_log_338x50_bco.png" />
     <Content Include="Content\img\apc\logos\apc_log_338x50_cor.png" />
+    <Content Include="Content\img\apc\vida1_750x468.png" />
+    <Content Include="Content\img\apc\vida2_750x468.png" />
+    <Content Include="Content\img\apc\vida3_750x468.png" />
+    <Content Include="Content\img\apc\vida4_750x468.png" />
+    <Content Include="Content\img\apc\vida5_750x468.png" />
     <Content Include="Content\img\apple-touch-icon.png" />
     <Content Include="Content\img\call-to-action-bg.jpg" />
     <Content Include="Content\img\clients\client-1.png" />
