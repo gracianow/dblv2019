@@ -1,0 +1,32 @@
+﻿#site {
+    width: 1000px;
+    height: 700px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    //background-color: #666;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#header {
+    width: 1000px;
+    height: 100px;
+    //background-color: #00F;
+}
+
+#conteudo {
+    width: 1000px;
+    height: 500px;
+    //background-color: #0F0;
+    text-align:center;
+    vertical-align:middle;
+    margin:50px, 50px, 20px, 20px;
+}
+
+#footer {
+    width: 1000px;
+    height: 100px;
+    //background-color: #C3C;
+}

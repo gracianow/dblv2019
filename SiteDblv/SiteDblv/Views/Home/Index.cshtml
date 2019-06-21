@@ -6,7 +6,7 @@
 <section id="intro">
     <div class="container">
         <div class="row-fluid">
-            <div class="span6 col-md-6 ">
+            <div class="span6 col-md-6">
                 <p style="text-indent:4px !important;">
                     <h3><span class="default "><strong>Doblevê - Tecnologia e Negócios</strong></span></h3>
                 </p>
@@ -56,7 +56,7 @@
 <section id="maincontent">
     <div class="container">
         <div class="row-fluid">
-            <div class="span4 col-md-4">
+            <div class="span12 col-xl-12 span8 col-sm-8 span4 col-md-4">
                 <div class="features">
                     <div class="icon">
                         <i class="icon-bg-light icon-circled icon-code icon-5x active"></i>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4 col-md-4 ">
+            <div class="span12 col-xl-12 span8 col-sm-8 span4 col-md-4">
                 <div class="features">
                     <div class="icon">
                         <i class="icon-bg-dark icon-circled icon-android icon-5x"></i>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4 col-md-4 ">
+            <div class="span12 col-xl-12 span8 col-sm-8 span4 col-md-4">
                 <div class="features">
                     <div class="icon">
                         <i class="icon-bg-dark icon-circled icon-cloud icon-5x"></i>
@@ -132,7 +132,24 @@
         </div>
         <div class="row-fluid">
             <div class="span6 col-md-6 ">
-                <h4>Nossos Serviços</h4>
+                <div class="card rounded" style="border:thin !important; ">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Criamos seu anúncio ou campanha no Google</strong></h4>
+                        <img class="card-img-top" src="~/Content/assets/img/dblv-site-thumb-570x400_consultoria1.png" alt="Google Meu Negócio" />
+                        <p class="card-text">
+                            Saiba como usar o potencial desta ferramenta a seu favor. Você poderá ser avalido por seus clientes e
+                            pelos <b>"Google Local Guides"</b>, que são pessoas que avaliam seus produtos e serviços; por isso você tem que saber interagir
+                            com o <b>"Google Meu Negócio"</b>, para manter e atrair mais clientes.<br />
+                        </p>
+                        <div>
+                            @Html.ActionLink("Peça um orçamento!", "Index", "Contato", null,
+                                          new { @class = "btn btn-large btn-rounded btn-color", data_icon = "icon-angle-right" })<br /><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span6 col-md-6 ">
+                <h4><strong>Nossos Serviços</strong></h4>
                 <!-- start: Accordion -->
                 <div class="accordion" id="accordion2">
                     <div class="accordion-group">
@@ -156,7 +173,7 @@
                             </a>
                         </div>
                         <div id="collapseTwo" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner active">
                                 Já tentou entrar num site no celular e nada dá certo? A tela fica minúscula e os botões não funcionam?
                                 Otimizamos o seu site e o deixamos pronto para exibição em celulares e tablets.
                                 A promoção está no seu Facebook mas não aparece no seu site?
@@ -181,34 +198,6 @@
                     </div>
                 </div>
                 <!--end: Accordion -->
-            </div>
-            <div class="span6 col-md-6 ">
-                <div class="well rounded">
-                    <div class="centered e_bounce">
-                        <img src="~/Content/assets/img/rfb_logo.svg" style="max-width:15% !important;" />
-                        <h5 style="color:#003772">
-                            <strong>Fazemos sua Declaração de Imposto de Renda</strong>
-                            <br />
-                            Acompanhe e monitore o processamento e a restituição.
-                        </h5>
-                        <h5 style="color:red">
-                            <strong>IRPF Simples a partir de R$ 50,00</strong>
-                        </h5>
-                        <hr />
-                        <p style="color:#003772; font-size:medium">
-                            <b>Entregue rápido e receba rápido: primeira semana</b><br />
-                            Maior chance de entrar no 1º e 2º Lote da restituição.
-                        </p>
-                        <hr />
-                        <p style="color:#003772; font-size:medium">
-                            <b>Entregue nos primeiros 30 dias!</b><br />
-                            Maior chance de entrar no 3º e 4º Lote da restituição
-                        </p>
-                        @Html.ActionLink("Tire suas dúvidas!", "Index", "IRPF", null,
-                                  new {@class= "btn btn-color btn-rounded"})
-                    </div>
-                </div>
-            </div>
             </div>
         </div>
 </section>
