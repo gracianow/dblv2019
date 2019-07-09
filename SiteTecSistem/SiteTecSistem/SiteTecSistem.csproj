@@ -170,6 +170,13 @@
     <Content Include="Content\tecsistem\img\portfolio\4.jpg" />
     <Content Include="Content\tecsistem\img\portfolio\5.jpg" />
     <Content Include="Content\tecsistem\img\portfolio\6.jpg" />
+    <Content Include="Content\tecsistem\img\portfolio\portif_800x640_v1.jpg" />
+    <Content Include="Content\tecsistem\img\portfolio\portif_800x640_v2.jpg" />
+    <Content Include="Content\tecsistem\img\portfolio\portif_800x640_v3.jpg" />
+    <Content Include="Content\tecsistem\img\portfolio\portif_800x640_v4.jpg" />
+    <Content Include="Content\tecsistem\img\portfolio\portif_800x640_v5.jpg" />
+    <Content Include="Content\tecsistem\img\portfolio\portif_800x640_v6.jpg" />
+    <Content Include="Content\tecsistem\img\portfolio\portif_800x640_v7.jpg" />
     <Content Include="Content\tecsistem\img\preloader.gif" />
     <Content Include="Content\tecsistem\img\slider\slider1.jpg" />
     <Content Include="Content\tecsistem\img\slider\slider2.jpg" />
