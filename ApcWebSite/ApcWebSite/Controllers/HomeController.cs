@@ -49,44 +49,6 @@ namespace ApcWebSite.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Index(String nome, String email, String empresa, String celular, String foneFixo, String assunto, String tipo, String mensagem)
-        {
-            try
-            {
-                //tipo = ViewBag.TipoMensagem;
-                MailMessage correo = new MailMessage();
-                correo.From = new MailAddress("cotacao@allprotectioncorretora.com.br");
-                correo.To.Add("cotacao@allprotectioncorretora.com.br");
-                correo.Subject = assunto + " - " + nome;
-                correo.Body = "Nome: " + nome + "<br />" + "E-mail: " + email + "<br />" +
-                    "Empresa: " + empresa + "<br />" + "Celular: " + celular + "<br />" + "Fone: " + foneFixo + "<br />" + "Tipo de Mensagem: " + tipo + "<br />" +
-                    "Assunto: " + assunto + "<br />" + "Comentário: " + mensagem;
-                correo.IsBodyHtml = true;
-                correo.Priority = MailPriority.Normal;
-
-                //Configuração SMTP
-                SmtpClient smtp = new SmtpClient();
-                smtp.Host = "mail.allprotectioncorretora.com.br";
-                smtp.Port = 587;
-                smtp.EnableSsl = false;
-                smtp.UseDefaultCredentials = true;
-                string conta = "cotacao@allprotectioncorretora.com.br";
-                string senha = "allpc2019";
-                smtp.Credentials = new System.Net.NetworkCredential(conta, senha);
-
-                smtp.Send(correo);
-                ViewBag.Mensagem = "Enviado com sucesso!";
-
-            }
-            catch (Exception ex)
-            {
-                ViewBag.Error = ex.Message + " - " + ex.StackTrace;
-            }
-
-            return View();
-        }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

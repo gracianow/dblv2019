@@ -1,83 +1,79 @@
 ﻿@{
     ViewData["Title"] = "Automóvel";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
 }
 
-    <section id="subintro">
-        <div class="row" style="margin-top:80px !important;">
-            <div class="col-md-3 col-xs-12">
-                <h3><strong>Marketing Digital - Online</strong></h3>
-            </div>
-            <div class="col-md-9 col-xs-12">
-                <ul class="breadcrumb notop">
-                    <li>
-                        <a asp-area="" asp-controller="Auto" asp-action="Index" class="navbar-brand">
-                            Início
-                        </a>
-                        <span class="divider">/</span>
-                    </li>
-                    <li class="active">Automóvel</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="conteudo">
+   <!--==========================
+      facts Section
+    ============================-->
 
-        <!-- Start About area -->
-        <div id="about" class="about-area area-padding">
+        <section id="facts" class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="section-headline text-left">
-                            <h2>Automóvel</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- single-well end-->
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="well-middle">
-                            <div class="single-well">
-                                <a href="#">
-                                    <h4 class="sec-head">project Maintenance</h4>
-                                </a>
-                                <p>
-                                    Redug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure aspernatur sit adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure
-                                </p>
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-check"></i> Interior design Package
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i> Building House
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i> Reparing of Residentail Roof
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i> Renovaion of Commercial Office
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-check"></i> Make Quality Products
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End col-->
-                    <!-- single-well start-->
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="well-left">
-                            <div class="single-well">
-                                <a href="#">
-                                    <img src="img/about/1.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End About area -->
+                <header class="section-header">
+                    <br />
+                    <h3><img src="~/Content/img/apc/logos/apc_logo_480x73.png" style="max-width:42%" /></h3>
+                    <h3>Seguro Auto</h3>
+                    <p>
+                        Ótimo atendimento ao cliente, prezamos pelos direitos de nossos segurados e oferecemos coberturas completas, <br />
+                        com o melhor preço e custo-benefício, podendo incluir coberturas adicionais para deixar seu seguro ainda mais completo.
+                    </p>
+                    <h4 style="font-weight:bold !important; text-align:center !important;">
+                        Principais coberturas no Seguro Auto
+                    </h4>
+                </header>
 
-    </section>
+                <div class="row counters">
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-toggle="counter-up">
+                            1
+                        </span>
+                        <h4>Colisão</h4>
+                        <p>
+                            O sinistro mais comum, 75% das ocorrências.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-toggle="counter-up">
+                            2
+                        </span>
+                        <h4>Roubo e Furto</h4>
+                        <p>
+                            Imprescindível nas grandes cidades, essencial para sua proteção
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-toggle="counter-up">
+                            3
+                        </span>
+                        <h4>Incêndio</h4>
+                        <p>
+                            Proteção do seu patrimônio, neste evento inesperado.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-toggle="counter-up">
+                            4
+                        </span>
+                        <h4>Danos a Terceiros</h4>
+                        <p>Sua segurança não depende só de você.</p>
+                    </div>
+
+                </div>
+
+                <div class="facts-img">
+                    <img src="~/Content/img/facts3.png" alt="" class="img-fluid">
+                </div>
+                <br />
+                <div class="col-md-12" style="text-align:center !important;">
+                    <a href="#contact" class="btn btn-primary active" role="button" aria-pressed="true">
+                        Peça já sua cotação para a All Protection!
+                    </a>
+                </div>
+                <br />
+            </div>
+        </section>
+        <!-- #facts -->

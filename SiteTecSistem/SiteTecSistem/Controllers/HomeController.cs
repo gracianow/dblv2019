@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Mail;
-using System.Web;
 using System.Web.Mvc;
 
 namespace SiteTecSistem.Controllers
@@ -25,7 +22,7 @@ namespace SiteTecSistem.Controllers
                 correo.To.Add("contato@tecsistemsistemas.com.br");
                 correo.Subject = assunto + " - " + nome;
                 correo.Body = "Nome: " + nome + "<br />" + "E-mail: " + email + "<br />" +
-                    "Empresa: " + empresa + "<br />" + "Celular: " + celular + "<br />" + "Fone: " + foneFixo + "<br />" + 
+                    "Empresa: " + empresa + "<br />" + "Celular: " + celular + "<br />" + "Fone: " + foneFixo + "<br />" +
                     "Assunto: " + assunto + "<br />" + "Comentário: " + mensagem;
                 correo.IsBodyHtml = true;
                 correo.Priority = MailPriority.Normal;
@@ -37,19 +34,33 @@ namespace SiteTecSistem.Controllers
                 smtp.EnableSsl = false;
                 smtp.UseDefaultCredentials = true;
                 string conta = "contato@tecsistemsistemas.com.br";
-                string senha = "tecm2019";
+                string senha = "tec2019";
                 smtp.Credentials = new System.Net.NetworkCredential(conta, senha);
 
                 smtp.Send(correo);
-                ViewBag.Mensagem = "Enviado com sucesso!";
 
+                TempData["EnviarMsg"] = "Enviado com sucesso!";
             }
             catch (Exception ex)
             {
-                ViewBag.Error = ex.Message + " - " + ex.StackTrace;
+                TempData["ErroMsg"] = ex.Message + " - " + ex.StackTrace;
+            }
+
+            if (TempData["EnviarMsg"] != null)
+            {
+                TempData["mailMsg"] = TempData["EnviarMsg"];
+            }
+            else
+            {
+                TempData["mailMsg"] = TempData["ErroMsg"];
             }
 
             return View();
+        }
+
+        public PartialViewResult ShowError(String mailMsg)
+        {
+            return PartialView("_ModalEnviarEmail");
         }
 
         public ActionResult Default()

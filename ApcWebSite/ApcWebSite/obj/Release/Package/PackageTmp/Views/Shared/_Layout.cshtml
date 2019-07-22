@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>@ViewData["Title"] - All Protection Corretora</title>
     @*@Styles.Render("~/Content/css")*@
 
@@ -32,24 +32,17 @@
 
         <!-- Main Stylesheet File -->
         <link href="~/Content/css/style.css" rel="stylesheet">
-
-        <!-- =======================================================
-          Theme Name: BizPage
-          Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-          Author: BootstrapMade.com
-          License: https://bootstrapmade.com/license/
-        ======================================================= -->
     </environment>
 </head>
 <body>
-        <div class="container">
+        @*<div class="container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             
         </main>
-        </div>
+        </div>*@
 
-        <div class="container body-content">
+        <div class="container body-content" style="margin-left:0px; margin-right:0px; width:100%; padding-left: 0px; padding-right: 0px;" >
             @Html.Partial("_Menu")
             @RenderBody()
             <hr />

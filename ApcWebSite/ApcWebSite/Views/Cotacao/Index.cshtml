@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "Cotação";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+<script type="text/javascript">$("#txtFoneFixo").mask("(00) 0000-0009");</script>
+
+<script type="text/javascript">$("#txtCelular").mask("(00) 00000-0009");</script>
+
+
+<!--==========================
+  Contact Section
+============================-->
+<section id="contact" class="section-bg wow fadeInUp">
+    <div class="container">
+        <br /><br />
+        <div class="section-header">
+            <h3>Contato</h3>
+            <p>Nossos canais de comunicação estão à sua disposição, Cliente!</p>
+        </div>
+
+        <div class="row contact-info">
+
+            <div class="col-md-4">
+                <div class="contact-address">
+                    <i class="ion-ios-location-outline"></i>
+                    <h3>Endereço</h3>
+                    <address>
+                        R. Elias Juvenal de Mello, 1400 Torre A 136 <br />
+                        Jundiaí - SP, CEP 13208-820 - Brasil <br>
+                    </address>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-phone">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <h3>Fones</h3>
+                    <p><a href="tel:+551139632253">+55 11 3963-2253</a></p>
+                    <p><a href="tel:+5511958336424">+55 11 95833-6424</a></p>
+                    <br />
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-email">
+                    <i class="ion-ios-email-outline"></i>
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:cotacao@allprotectioncorretora.com.br">Cotação</a></p>
+                    <br />
+                </div>
+            </div>
+
+        </div>
+
+        <form method="post" enctype="multipart/form-data" role="form" class="contactForm">
+            <div class="form-row text-center">
+                <div class="form-group">
+                    <div class="text-center">
+                        <h5 style="color:blue;">@ViewBag.Mensagem</h5>
+                        <h5 style="color:red;">@ViewBag.Error</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row text-center">
+                <div class="form-group col-md-6">
+                    <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" required />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Por favor insira um e-maiil válido!" required />
+                    <div class="validation"></div>
+                </div>
+            </div>
+            <div class="form-row text-center">
+                <div class="form-group col-md-6">
+                    <input type="text" name="empresa" class="form-control" id="empresa" placeholder="Empresa" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="tel" name="celular" id="txtCelular" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4,4}"
+                           class="form-control" placeholder="Celular" data-rule="minlen:11"
+                           data-msg="Digite pelo menos 11 caracteres!" required />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="tel" name="fonefixo" id="txtFoneFixo" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}"
+                           class="form-control" placeholder="Fone Fixo" data-rule="minlen:10"
+                           data-msg="Digite pelo menos 10 caracteres!" required />
+                    <div class="validation"></div>
+                </div>
+            </div>
+            <div class="form-row text-center">
+                <div class="form-group col-md-6">
+                    <select name="tipo" class="form-control" id="tipo">
+                        <option value="Cotação">Cotação</option>
+                        @*<option value="Atendimento">Atendimento</option>*@
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Por favor digite o assunto!" required />
+                    <div class="validation"></div>
+                </div>
+
+            </div>
+            <div class="form-row text-center">
+                <div class="form-group col-md-12">
+                    <textarea class="form-control" name="mensagem" rows="5" data-rule="required" data-msg="Digite sua mensagem!" placeholder="Comentários" required></textarea>
+                    <div class="validation"></div>
+                </div>
+            </div>
+            <div class="form-row text-center">
+                <div class="form-group col-md-12">
+                    @*<button id="enviar" class="btn btn-primary" type="submit">Enviar</button>*@
+                    <button type="submit" data-toggle="modal" data-target="#modalMessage">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Modal -->
+    @if (TempData["mailMsg"] != null)
+    {
+        Html.RenderPartial("_ModalEnviarEmail", TempData["mailMsg"]);
+    }
+    <!-- end modal-->
+    <!-- End Left contact -->
+    <!-- Start Google Map -->
+    <div class="col-md-6 col-sm-6 col-xs-12" style="text-align:center !important; vertical-align:middle !important">
+        <div class="card mb-6" style="background-color:black; border-radius:3px;">
+            <img class="card-img-top" src="~/Content/tecsistem/img/about/tecsis1000x550_seg1.jpg" style="border-radius:3px;" />
+            <div class="card-body">
+                <h3 class="card-title" style="color:white !important;">Otimize sua segurança!</h3>
+                <br />
+                <h5 class="card-text text-center" style="color:white !important;">
+                    <strong>
+                        Controle de Acesso<br />
+                        CFTV HD<br />
+                        Detecção<br />
+                        Alarmes de Incêndio
+                    </strong>
+                </h5>
+                <br />
+                @*<p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>*@
+            </div>
+        </div>
+    </div>
+    <!-- End Google Map -->
+</section><!-- #contact -->

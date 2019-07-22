@@ -129,6 +129,13 @@
     height: 60px  !important;
     padding: 9px 0;
   }
+
+    .navbar-brand > img {
+        max-height: 1%;
+        padding: 15px;
+        width: auto;
+    }
+
   .navbar-default .navbar-toggle, .stick .navbar-default .navbar-toggle {
     padding: 15px 0;
   }

@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewData["Title"] = "Início";
+    Layout = "~/Views/Shared/_LayoutInicio.cshtml";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+<script type="text/javascript">$("#txtFoneFixo").mask("(00) 0000-0009");</script>
+
+<script type="text/javascript">$("#txtCelular").mask("(00) 00000-0009");</script>
+
+<section id="intro">
+    <div class="intro-container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12" style="margin-left:0px; margin-right:0px; width:100%; padding-left: 0px; padding-right: 0px;">
+                <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+                    <ol class="carousel-indicators"></ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item  active">
+                            <div class="carousel-background">
+                                <img src="~/Content/img/intro-carousel/slider_1920x1280_car.jpg" />
+                            </div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Seguro Auto</h2>
+                                    <p>
+                                        Proteja seu Automóvel dos riscos e tenha mais segurança <br />
+                                        para o seu dia a dia com um valor que cabe no bolso!
+                                    </p>
+                                    <a href="#facts" class="btn-get-started scrollto">Saiba mais ...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-background">
+                                <img src="~/Content/img/intro-carousel/1.jpg" />
+                            </div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Seguro Empresarial</h2>
+                                    <p>
+                                        Todas as Empresas enfrentam grandes desafios para se manterem competitivas no mercado.
+                                        Por isso, o Seguro Empresarial se faz tão necessário para minimizar os riscos de seu negócio!
+                                        @*Oferecemos as coberturas ideais para você ter mais segurança na sua empresa com o menor custo.*@
+                                        @*Peça já sua cotação para a All Protection!*@
+                                    </p>
+                                    <a href="#about" class="btn-get-started scrollto">Saiba mais ...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-background">
+                                <img src="~/Content/img/intro-carousel/slider_1920x1280_transp.jpg" />
+                            </div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Seguro Transporte</h2>
+                                    <p>
+                                        Pé na estrada e tranquilidade a cada minuto!! <br />
+                                        O Seguro Transporte hoje se faz necessário e oferecemos as melhores opções do mercado!
+                                        @*de seguros para que você tenha segurança e proteção para seu caminhão e sua carga com o menor preço!*@
+                                    </p>
+                                    <a href="#facts2" class="btn-get-started scrollto">Saiba mais ...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-background">
+                                <img src="~/Content/img/intro-carousel/slider_1920x128_cond.jpg" />
+                            </div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Seguro Condominial</h2>
+                                    <p>
+                                        A All Protection realizará um estudo personalizado para as necessidades de seguro em seu condomínio!
+                                    </p>
+                                    <a href="#services" class="btn-get-started scrollto">Saiba mais ...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- #intro -->
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 box">
+                    <i class="ion-model-s"></i>
+                    <h4 class="title"><a href="#facts">Seguro Auto</a></h4>
+                    <p class="description">
+                        Seu veículo precisa de coberturas específicas? Temos as melhores opções...
+                    </p>
+                </div>
+
+                <div class="col-lg-4 box box-bg">
+                    <i class="ion-ios-location"></i>
+                    <h4 class="title"><a href="#about">Seguro Empresarial</a></h4>
+                    <p class="description">
+                        No Seguro Empresarial, ajustamos sua apólice de acordo com os potenciais riscos ao seu negócio...
+                    </p>
+                </div>
+
+                <div class="col-lg-4 box">
+                    <i class="ion-ios-keypad"></i>
+                    <h4 class="title"><a href="#facts2">Seguro Transporte</a></h4>
+                    <p class="description">
+                        Seguro Transporte, sob medida para você viajar tranquilo e proteger sua carga...
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- #featured-services -->

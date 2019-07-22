@@ -45,6 +45,14 @@
 
     <script type="text/javascript">$("#txtCelular").mask("(00) 00000-0009");</script>
 
+    @section scripts{
+        <script>
+            $(document).ready(function () {
+                $('#modalMsg').modal('show');
+            });
+        </script>
+    }
+
 </head>
 <body data-spy="scroll" data-target="#navbar-example">
     <div class="container">
@@ -54,7 +62,7 @@
         </main>
     </div>
 
-    <div class="container body-content">
+    <div class="container body-content" style="margin-left:0px; margin-right:0px; width:100%; padding-left:0px; padding-right:0px;">
         @Html.Partial("_Menu")
         @RenderBody()
         <hr />
