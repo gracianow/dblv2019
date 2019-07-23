@@ -19,5 +19,21 @@ namespace SiteDblv
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        //force https on server, ignore it on local machine
+        //protected void Application_BeginRequest()
+        //{
+        //    if (!Context.Request.IsSecureConnection)
+        //    {
+        //        if (HttpContext.Current.Request.IsLocal)
+        //        {
+        //            Response.Redirect(Context.Request.Url.ToString().Replace("http://localhost:4356/", "https://localhost:4356/"));
+        //        }
+        //        else
+        //        {
+        //            Response.Redirect(Context.Request.Url.ToString().Replace("http://", "https://"));
+        //        }
+        //    }
+        //}
     }
 }
