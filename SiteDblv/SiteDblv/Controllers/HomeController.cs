@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace SiteDblv.Controllers
 {
-    //[RequireHttps]
+
     [Tls]
     public class HomeController : Controller
     {

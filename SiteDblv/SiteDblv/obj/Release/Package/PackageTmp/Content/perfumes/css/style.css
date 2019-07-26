@@ -1,9 +1,3 @@
-/*
-    Theme Name: Delicious
-    Theme URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
 
 body {
 	font-size: 15px;
@@ -41,7 +35,7 @@ table {
 #banner h2{
     font-family: 'Satisfy', sans-serif;
     font-size: 45px;
-    color: #FFB03B;
+    color: #ec218f;
 }
 #banner p{
     font-family: 'PT Sans', sans-serif;
@@ -55,7 +49,7 @@ table {
     font-family: 'Satisfy', sans-serif;
     font-size: 65px;
     margin-top: 140px;
-    color: #FFB03B;
+    color: #ec218f;
 }
 .sidenav {
     height: 100%;
@@ -100,7 +94,7 @@ table {
 }
 
 .header-h {
-    color: #FFB03B;
+    color: #ec218f;
     font-size: 46px;
     font-family: 'Satisfy', sans-serif;
     font-weight: 300;
@@ -198,8 +192,7 @@ table {
     height: auto;
 }
 .contacts-btn {
-    background-color:  #FFB03B !important;
-    color: #ffffff !important;
+    background-color:  #ec218f !important;
     width: 170px;
     height: 54px;
     border-radius: 3px;
@@ -208,7 +201,7 @@ table {
     font-weight: normal;
     text-transform: capitalize;
     border: 0px;
-    color: #000 !important;
+
 }
 
 .validation {
@@ -253,7 +246,7 @@ table {
 
 .heading{
     font-family: 'Satisfy', sans-serif;
-    color: #FFB03B;
+    color: #ec218f;
     font-size: 24px;
 }
 .marb-35{
@@ -264,11 +257,11 @@ table {
 }
 .details-list ul li i {
     margin-right: 10px;
-    color: #ffb03b;
+    color: #ec218f;
 }
 #about img
 {
-    border: 5px solid rgb(255, 176, 59);
+    border: 5px solid rgb(236, 33, 143);
     border-radius: 2px;
 }
 #event {
@@ -292,13 +285,13 @@ table {
     overflow: auto;
 }
 .content-holder h2 {
-    color: #FFB03B;
+    color: #ec218f;
     font-size: 32px;
     padding-bottom: 15px;
     font-family: 'Satisfy', sans-serif;
 }
 .content-holder address strong {
-    color: #FFB03B;
+    color: #ec218f;
     padding: 10px 0px;
 }
 .details-text p {
@@ -308,7 +301,7 @@ table {
     font-weight: 300;
 }
 .btn-read-more {
-    background: #FFB03B;
+    background: #ec218f;
     padding: 7px 19px;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -333,14 +326,32 @@ table {
     padding: 15px;
     position: relative;
 }
+
+.dinner .menu-restaurant .menu-title {
+    float: left;
+    font-family: Montserrat,arial;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #530574;
+}
+
+.breakfast .menu-restaurant .menu-title {
+    float: left;
+    font-family: Montserrat,arial;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ec218f;
+}
+
 .menu-restaurant .menu-title {
     float: left;
     font-family: Montserrat,arial;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #FFB03B;
+    color: #ec218f;
 }
-.menu-restaurant .menu-line {
+
+    .menu-restaurant .menu-line {
     position: absolute;
     bottom: 6px;
     border-bottom: 1px dotted rgba(0,0,0,.3);
@@ -366,9 +377,9 @@ table {
 }
 
 #menu-flters ul li a.active, #menu-flters ul li a:hover {
-    background: #FFB03B;
+    background: #ec218f;
     color: #fff;
-    border: 1px solid #FFB03B;
+    border: 1px solid #ec218f;
 }
 #menu-flters ul li {
     display: inline-block;
@@ -411,7 +422,7 @@ table {
     padding-bottom: 20px;
     font-family: 'Satisfy', sans-serif;
     font-size: 44px;
-    color: #FFB03B;
+    color: #ec218f;
 }
 .footer .widget, .footer address {
     color: #999;

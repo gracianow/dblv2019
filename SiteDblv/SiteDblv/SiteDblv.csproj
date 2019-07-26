@@ -374,22 +374,7 @@
     <Content Include="Content\perfumes\js\jquery.min.js" />
     <Content Include="Content\perfumes\logos\logo1.png" />
     <Content Include="Content\perfumes\logos\logo2.png" />
-    <Content Include="Delicious_theme\contactform\contactform.js" />
-    <Content Include="Delicious_theme\contactform\readme.txt" />
-    <Content Include="Delicious_theme\css\bootstrap.min.css" />
-    <Content Include="Delicious_theme\css\font-awesome.min.css" />
-    <Content Include="Delicious_theme\css\imagehover.min.css" />
-    <Content Include="Delicious_theme\css\style.css" />
-    <Content Include="Delicious_theme\fonts\fontawesome-webfont.svg" />
-    <Content Include="Delicious_theme\img\banner-bg.jpg" />
-    <Content Include="Delicious_theme\img\res01.jpg" />
-    <Content Include="Delicious_theme\img\res02.jpg" />
-    <Content Include="Delicious_theme\index.html" />
-    <Content Include="Delicious_theme\js\bootstrap.min.js" />
-    <Content Include="Delicious_theme\js\custom.js" />
-    <Content Include="Delicious_theme\js\jquery.easing.min.js" />
-    <Content Include="Delicious_theme\js\jquery.min.js" />
-    <Content Include="Delicious_theme\Readme.txt" />
+    <Content Include="Content\perfumes\logos\logo_claudia_perfumes_240x100.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
@@ -438,11 +423,6 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="Delicious_theme\fonts\fontawesome-webfont.eot" />
-    <Content Include="Delicious_theme\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Delicious_theme\fonts\fontawesome-webfont.woff" />
-    <Content Include="Delicious_theme\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Delicious_theme\fonts\FontAwesome.otf" />
     <Content Include="Content\perfumes\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\perfumes\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\perfumes\fonts\fontawesome-webfont.woff" />
@@ -511,6 +491,7 @@
     <Content Include="Views\SiteDetail\Index.cshtml" />
     <Content Include="Views\Perfume\Index.cshtml" />
     <Content Include="Views\Contato\_ModalEnviarEmail.cshtml" />
+    <Content Include="Views\Perfume\_ModalEnviarEmail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

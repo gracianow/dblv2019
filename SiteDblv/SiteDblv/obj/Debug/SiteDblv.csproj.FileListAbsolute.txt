@@ -93,4 +93,3 @@ D:\git\dblv2019\SiteDblv\SiteDblv\obj\Debug\SiteDblv.csproj.CoreCompileInputs.ca
 D:\git\dblv2019\SiteDblv\SiteDblv\obj\Debug\SiteDblv.csproj.CopyComplete
 D:\git\dblv2019\SiteDblv\SiteDblv\obj\Debug\SiteDblv.dll
 D:\git\dblv2019\SiteDblv\SiteDblv\obj\Debug\SiteDblv.pdb
-D:\git\dblv2019\SiteDblv\SiteDblv\obj\Debug\SiteDblv.csprojAssemblyReference.cache

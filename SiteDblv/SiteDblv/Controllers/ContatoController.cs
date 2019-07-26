@@ -106,5 +106,10 @@ namespace SiteDblv.Controllers
             return View();
         }
 
+        public PartialViewResult ShowError(String mailMsg)
+        {
+            return PartialView("_ModalEnviarEmail");
+        }
+
     }
 }
