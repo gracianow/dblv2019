@@ -32,7 +32,8 @@
                                         Proteja seu Automóvel dos riscos e tenha mais segurança <br />
                                         para o seu dia a dia com um valor que cabe no bolso!
                                     </p>
-                                    <a href="#facts" class="btn-get-started scrollto">Saiba mais ...</a>
+                                        @Html.ActionLink("Saiba mais ...", "Auto", "Auto",
+                                       null, new { @class = "btn-get-started scrollto" })
                                 </div>
                             </div>
                         </div>
@@ -50,7 +51,8 @@
                                         @*Oferecemos as coberturas ideais para você ter mais segurança na sua empresa com o menor custo.*@
                                         @*Peça já sua cotação para a All Protection!*@
                                     </p>
-                                    <a href="#about" class="btn-get-started scrollto">Saiba mais ...</a>
+                                    @Html.ActionLink("Saiba mais ...", "Empresarial", "Empresarial",
+                                       null, new { @class = "btn-get-started scrollto" })
                                 </div>
                             </div>
                         </div>
@@ -67,7 +69,8 @@
                                         O Seguro Transporte hoje se faz necessário e oferecemos as melhores opções do mercado!
                                         @*de seguros para que você tenha segurança e proteção para seu caminhão e sua carga com o menor preço!*@
                                     </p>
-                                    <a href="#facts2" class="btn-get-started scrollto">Saiba mais ...</a>
+                                    @Html.ActionLink("Saiba mais ...", "Transporte", "Transporte",
+                                       null, new { @class = "btn-get-started scrollto" })
                                 </div>
                             </div>
                         </div>
@@ -82,7 +85,8 @@
                                     <p>
                                         A All Protection realizará um estudo personalizado para as necessidades de seguro em seu condomínio!
                                     </p>
-                                    <a href="#services" class="btn-get-started scrollto">Saiba mais ...</a>
+                                    @Html.ActionLink("Saiba mais ...", "Condominio", "Condominio",
+                                       null, new { @class = "btn-get-started scrollto" })
                                 </div>
                             </div>
                         </div>
@@ -114,7 +118,10 @@
 
                 <div class="col-lg-4 box">
                     <i class="ion-model-s"></i>
-                    <h4 class="title"><a href="#facts">Seguro Auto</a></h4>
+                    <h4 class="title">
+                        @Html.ActionLink("Seguro Auto", "Auto", "Auto",
+                                               null, new { @class = " " })
+                    </h4>
                     <p class="description">
                         Seu veículo precisa de coberturas específicas? Temos as melhores opções...
                     </p>
@@ -122,7 +129,10 @@
 
                 <div class="col-lg-4 box box-bg">
                     <i class="ion-ios-location"></i>
-                    <h4 class="title"><a href="#about">Seguro Empresarial</a></h4>
+                    <h4 class="title">
+                        @Html.ActionLink("Seguro Empresarial", "Empresarial", "Empresarial",
+                                               null, new { @class = " " })
+                    </h4>
                     <p class="description">
                         No Seguro Empresarial, ajustamos sua apólice de acordo com os potenciais riscos ao seu negócio...
                     </p>
@@ -130,7 +140,10 @@
 
                 <div class="col-lg-4 box">
                     <i class="ion-ios-keypad"></i>
-                    <h4 class="title"><a href="#facts2">Seguro Transporte</a></h4>
+                    <h4 class="title">
+                        @Html.ActionLink("Seguro Transporte", "Transporte", "Transporte",
+                                               null, new { @class = " " })
+                    </h4>
                     <p class="description">
                         Seguro Transporte, sob medida para você viajar tranquilo e proteger sua carga...
                     </p>

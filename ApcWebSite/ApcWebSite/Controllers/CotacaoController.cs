@@ -7,14 +7,14 @@ namespace ApcWebSite.Controllers
     public class CotacaoController : Controller
     {
         // GET: Cotacao
-        public ActionResult Index()
+        public ActionResult Cotacao()
         {
             return View();
         }
 
 
         [HttpPost]
-        public ActionResult Index(String nome, String email, String empresa, String celular, String foneFixo, String assunto, String tipo, String mensagem)
+        public ActionResult Cotacao(String nome, String email, String empresa, String celular, String foneFixo, String assunto, String tipo, String mensagem)
         {
             try
             {
@@ -60,6 +60,11 @@ namespace ApcWebSite.Controllers
             return View();
         }
 
+
+        public PartialViewResult ShowError(String mailMsg)
+        {
+            return PartialView("_ModalEnviarEmail");
+        }
 
     }
 }

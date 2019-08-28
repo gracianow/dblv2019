@@ -75,7 +75,6 @@ D:\git\dblv2019\SiteDblv\SiteDblv\bin\EntityFramework.xml
 D:\git\dblv2019\SiteDblv\SiteDblv\bin\EntityFramework.SqlServer.xml
 D:\git\dblv2019\SiteDblv\SiteDblv\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\git\dblv2019\SiteDblv\SiteDblv\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\git\dblv2019\SiteDblv\SiteDblv\bin\Newtonsoft.Json.pdb
 D:\git\dblv2019\SiteDblv\SiteDblv\bin\Newtonsoft.Json.xml
 D:\git\dblv2019\SiteDblv\SiteDblv\bin\System.Diagnostics.DiagnosticSource.xml
 D:\git\dblv2019\SiteDblv\SiteDblv\bin\System.Net.Http.Formatting.xml
@@ -94,3 +93,7 @@ D:\git\dblv2019\SiteDblv\SiteDblv\obj\Release\SiteDblv.csproj.CoreCompileInputs.
 D:\git\dblv2019\SiteDblv\SiteDblv\obj\Release\SiteDblv.csproj.CopyComplete
 D:\git\dblv2019\SiteDblv\SiteDblv\obj\Release\SiteDblv.dll
 D:\git\dblv2019\SiteDblv\SiteDblv\obj\Release\SiteDblv.pdb
+D:\git\dblv2019\SiteDblv\SiteDblv\bin\BootstrapMvc.Bootstrap3.dll
+D:\git\dblv2019\SiteDblv\SiteDblv\bin\BootstrapMvc.Bootstrap3Mvc5.dll
+D:\git\dblv2019\SiteDblv\SiteDblv\bin\BootstrapMvc.Core.dll
+D:\git\dblv2019\SiteDblv\SiteDblv\bin\BootstrapMvc.Mvc5.dll

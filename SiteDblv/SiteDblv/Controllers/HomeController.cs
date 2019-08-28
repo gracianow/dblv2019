@@ -32,6 +32,12 @@ namespace SiteDblv.Controllers
             }
         }
 
+        public ActionResult Privacy()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Doblevê";

@@ -1,7 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Início _ Doblevê";
+    ViewData["Title"] = "Início";
 
 }
+
 
 <section id="intro">
     <div class="container">
@@ -47,7 +48,6 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- /.section-2 -->
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
                             Coloque seus produtos e serviços nas Redes Sociais, interaja com seu público.
                         </p>
                         @Html.ActionLink("Saiba mais", "Index", "Consultoria", null,
-                                   new {@class="btn btn-color btn-rounded", data_icon="icon-angle-right"})
+                                   new { @class = "btn btn-color btn-rounded", data_icon = "icon-angle-right" })
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                             Mantenha o seu perfil nas redes sociais atualizado e atraente.
                         </p>
                         @Html.ActionLink("Saiba mais", "Index", "Marketing", null,
-                                   new {@class="btn btn-color btn-rounded", data_icon="icon-angle-right"})
+                                   new { @class = "btn btn-color btn-rounded", data_icon = "icon-angle-right" })
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                             </ul>
                         </p>
                         @Html.ActionLink("Saiba mais", "Index", "Servicos", null,
-                                   new {@class="btn btn-color btn-rounded", data_icon="icon-angle-right"})
+                                   new { @class = "btn btn-color btn-rounded", data_icon = "icon-angle-right" })
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="cta">
                         @Html.ActionLink("Confira", "Index", "SiteDetail", null,
-                                      new {@class= "btn btn-large btn-rounded btn-color", data_icon="icon-angle-right"})
+                                      new { @class = "btn btn-large btn-rounded btn-color", data_icon = "icon-angle-right" })
                     </div>
                 </div>
                 <!-- end tagline -->
@@ -201,12 +201,32 @@
             </div>
         </div>
 </section>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2867053-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-2867053-3');
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#237afc"
+            },
+            "button": {
+                "background": "#fff",
+                "text": "#237afc"
+            }
+        },
+        "content": {
+            "message": "Nós usamos os cookies do seu navegador para melhorar sua experiência em nosso site. <br /> \nSe desejar mais informações, leia nossa Política de Privacidade.",
+            "dismiss": "Aceitar!",
+            "link": "Saiba mais!",
+            "href": "http://dobleve.com.br/home/Privacy.cshtml"
+        }
+    });
+</script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-2867053-3');
 </script>

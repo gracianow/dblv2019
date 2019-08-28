@@ -259,12 +259,12 @@ table {
     margin-right: 10px;
     color: #ec218f;
 }
-#about img
+#perfume img
 {
     border: 5px solid rgb(236, 33, 143);
     border-radius: 2px;
 }
-#event {
+#beleza {
     background: url('../img/foto_clau_perf_1366x966_fdo1.png') no-repeat;
     background-size: cover;
 }
@@ -475,7 +475,7 @@ table {
     .header-p, body{
         font-size: 14px;
     }
-    .about-info, .mr-15{
+    .perfume-info, .mr-15{
         margin-bottom: 15px;
     }
     #banner h2{

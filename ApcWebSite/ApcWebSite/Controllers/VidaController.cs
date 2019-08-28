@@ -10,8 +10,8 @@ namespace ApcWebSite.Controllers
 {
     public class VidaController : Controller
     {
-        // GET: /<controller>/
-        public ActionResult Index()
+        // GET: Vida
+        public ActionResult Vida()
         {
             return View();
         }

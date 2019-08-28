@@ -22,30 +22,6 @@ namespace ApcWebSite.Controllers
             model.TipoMensagem = tipo;
             model.Assunto = assunto;
 
-
-            ViewBag.TipoMensagem = new SelectList(
-               new List<SelectListItem> {
-                  new SelectListItem { Value = "0" , Text = "Cotação"},
-                  new SelectListItem { Value = "1" , Text = "Atendimento"},
-                                             }, "Value", "Text", tipo);
-
-
-            ViewBag.Assunto = new SelectList(
-               new List<SelectListItem> {
-                                                new SelectListItem { Value = "0" , Text = "Selecione"},
-                                                new SelectListItem { Value = "1" , Text = "Site Moderno"},
-                                                new SelectListItem { Value = "2" , Text = "Anúncio Google meu Negócio"},
-                                                new SelectListItem { Value = "3" , Text = "Marketing Digital"},
-                                                new SelectListItem { Value = "4" , Text = "Internet WI-FI"},
-                                                new SelectListItem { Value = "5" , Text = "Mantutenção"},
-                                                new SelectListItem { Value = "6" , Text = "IRPF"},
-                                                new SelectListItem { Value = "7" , Text = "ERP"},
-                                                new SelectListItem { Value = "8" , Text = "Sugestão"},
-                                                new SelectListItem { Value = "9" , Text = "Pergunta"},
-                                                new SelectListItem { Value = "10" , Text = "Reclamação"},
-                                             }, "Value", "Text", assunto);
-
-
             return View();
         }
 

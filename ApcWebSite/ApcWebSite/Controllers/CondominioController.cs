@@ -9,7 +9,7 @@ namespace ApcWebSite.Controllers
     public class CondominioController : Controller
     {
         // GET: Condominio
-        public ActionResult Index()
+        public ActionResult Condominio()
         {
             return View();
         }

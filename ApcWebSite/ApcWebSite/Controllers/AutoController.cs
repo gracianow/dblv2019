@@ -12,7 +12,7 @@ namespace ApcWebSite.Controllers
     public class AutoController : Controller
     {
         // GET: /<controller>/
-        public ActionResult Index()
+        public ActionResult Auto()
         {
             return View();
         }

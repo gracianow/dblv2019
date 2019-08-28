@@ -9,7 +9,7 @@ namespace ApcWebSite.Controllers
     public class EmpresarialController : Controller
     {
         // GET: Empresarial
-        public ActionResult Index()
+        public ActionResult Empresarial()
         {
             return View();
         }

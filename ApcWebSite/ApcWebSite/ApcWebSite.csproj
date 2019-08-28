@@ -18,10 +18,10 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressSSLPort>44331</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -129,7 +129,6 @@
     <Compile Include="Controllers\CondominioController.cs" />
     <Compile Include="Controllers\CotacaoController.cs" />
     <Compile Include="Controllers\EmpresarialController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InicioController.cs" />
     <Compile Include="Controllers\QuemSomosController.cs" />
     <Compile Include="Controllers\TransporteController.cs" />
@@ -391,7 +390,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -403,7 +401,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />
-    <Content Include="Views\Auto\Index.cshtml" />
+    <Content Include="Views\Auto\Auto.cshtml" />
     <Content Include="Views\Contato\Index.cshtml" />
     <Content Include="Views\Contato\EnviarEmail.cshtml" />
     <Content Include="Views\Shared\_Menu2.cshtml" />
@@ -412,12 +410,12 @@
     <Content Include="Views\Shared\_Footer2.cshtml" />
     <Content Include="Views\Inicio\Index.cshtml" />
     <Content Include="Views\Shared\_MenuInicio.cshtml" />
-    <Content Include="Views\Empresarial\Index.cshtml" />
-    <Content Include="Views\Condominio\Index.cshtml" />
-    <Content Include="Views\QuemSomos\Index.cshtml" />
-    <Content Include="Views\Transporte\Index.cshtml" />
-    <Content Include="Views\Vida\Index.cshtml" />
-    <Content Include="Views\Cotacao\Index.cshtml" />
+    <Content Include="Views\Empresarial\Empresarial.cshtml" />
+    <Content Include="Views\Condominio\Condominio.cshtml" />
+    <Content Include="Views\QuemSomos\QuemSomos.cshtml" />
+    <Content Include="Views\Transporte\Transporte.cshtml" />
+    <Content Include="Views\Vida\Vida.cshtml" />
+    <Content Include="Views\Cotacao\Cotacao.cshtml" />
     <Content Include="Views\Cotacao\_ModalEnviarEmail.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -451,7 +449,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56530</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:56530/</IISUrl>
+          <IISUrl>https://localhost:44331/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

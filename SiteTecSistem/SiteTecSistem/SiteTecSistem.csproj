@@ -231,6 +231,7 @@
     <Content Include="Content\tecsistem\lib\wow\wow.js" />
     <Content Include="Content\tecsistem\lib\wow\wow.min.js" />
     <Content Include="favicon.ico" />
+    <Content Include="favicon.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />

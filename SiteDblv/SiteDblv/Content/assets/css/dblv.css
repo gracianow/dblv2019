@@ -54,3 +54,13 @@
 .contato_input {
     width: 300px !important;
 }
+
+.post>h2, .post>div{
+    background: #EEE;
+    padding:10px;
+    margin:0;
+}
+
+.post>h2 {
+    margin-top: 15px;
+}

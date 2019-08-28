@@ -66,9 +66,9 @@ namespace SiteDblv.Controllers
             {
                 //tipo = ViewBag.TipoMensagem;
                 MailMessage correo = new MailMessage();
-                correo.From = new MailAddress("contato@dobleve.com.br");
-                correo.To.Add("contato@dobleve.com.br");
-                correo.Subject = assunto + " - " + nome;
+                correo.From = new MailAddress("info@dobleve.com.br");
+                correo.To.Add("info@dobleve.com.br");
+                correo.Subject = "Site Doblevê: " + assunto + " - " + nome;
                 correo.Body = "Nome: " + nome + "<br />" + "E-mail: " + email + "<br />" +
                     "Empresa: " + empresa + "<br />" + "Celular: " + celular + "<br />" + "Fone: " + foneFixo + "<br />" + "Tipo de Mensagem: " + tipo + "<br />" +
                     "Assunto: " + assunto + "<br />" + "Comentário: " + mensagem;
@@ -81,7 +81,7 @@ namespace SiteDblv.Controllers
                 smtp.Port = 8889;
                 smtp.EnableSsl = false;
                 smtp.UseDefaultCredentials = true;
-                string conta = "contato@dobleve.com.br";
+                string conta = "info@dobleve.com.br";
                 string senha = "Wcw1718v#";
                 smtp.Credentials = new System.Net.NetworkCredential(conta, senha);
 

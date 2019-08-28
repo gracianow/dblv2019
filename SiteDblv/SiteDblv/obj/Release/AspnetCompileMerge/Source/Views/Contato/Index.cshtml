@@ -5,21 +5,13 @@
     ViewBag.Title = "Contato";
 }
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+@Scripts.Render("https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js")
 
 <script type="text/javascript">$("#txtFoneFixo").mask("(00) 0000-0009");</script>
 
 <script type="text/javascript">$("#txtCelular").mask("(00) 00000-0009");</script>
 
-@section scripts{
-    <script>
-        $(document).ready(function () {
-            $('#modalMsg').modal('show');
-        });
-    </script>
-}
 
 
 <!-- Subhead
@@ -57,7 +49,7 @@
                             <li>
                                 <label><strong>Email: </strong></label>
                                 <p>
-                                    contato@dobleve.com.br
+                                    info@dobleve.com.br
                                 </p>
                             </li>
                             <li>
@@ -84,6 +76,10 @@
                     <div class="form-row">
                         <div class="form-group span4 text-left">
                             <h4><strong>Contato</strong></h4>
+                        </div>
+                        <div class="form-group span3" style="text-align:right !important;">
+                            <h5 style="color:blue;">@TempData["EnviarMsg"]</h5>
+                            <h5 style="color:red;">@TempData["ErroMsg"]</h5>
                         </div>
                     </div>
                     <div class="form-row text-center">
@@ -119,7 +115,7 @@
                                 <option value=""></option>
                                 <option value="Atendimento">Site Moderno</option>
                                 <option value="Anúncio Google meu Negócio">Anúncio Google meu Negócio</option>
-                                <option value="Marketing Digita">Marketing Digita</option>
+                                <option value="Marketing Digita">Marketing Digital</option>
                                 <option value="Internet WI-FI">Internet WI-FI</option>
                                 <option value="Mantutenção">Mantutenção</option>
                                 <option value="IRPF">IRPF</option>
@@ -157,24 +153,28 @@
                     </div>
                     <div class="form-row text-center">
                         <div class="form-group span8">
-                            <button id="enviar" class="btn btn-color btn-rounded" type="submit" data-toggle="modal" data-target="#modalMessage">Enviar</button>
+                            <button id="enviar" class="btn btn-color btn-rounded" type="submit">Enviar</button>
+                            @*<button id="enviar" class="btn btn-color btn-rounded" type="submit" data-toggle="modal" data-target="#modalMessage">Enviar</button>*@
                         </div>
                     </div>
                 </form>
             </div>
             <!-- Modal -->
-            @if (TempData["mailMsg"] != null)
-            {
-                Html.RenderPartial("_ModalEnviarEmail", TempData["mailMsg"]);
-            }
+
+                @*@if (TempData["mailMsg"] != null)
+                {
+                    Html.RenderPartial("_ModalEnviarEmail", TempData["mailMsg"]);
+                }*@
+ 
             <!-- end modal-->
         </div>
     </div>
 </section>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2867053-3"></script>
-<script>
+@Scripts.Render("https://www.googletagmanager.com/gtag/js?id=UA-2867053-3")
+@*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2867053-3"></script>*@
+<script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
