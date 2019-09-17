@@ -2,38 +2,80 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <title>@ViewBag.Title - Topsystec</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    @Styles.Render("~/Content/topsystec/css/bootstrap.min.css")
+    <!-- Template styles-->
+    @Styles.Render("~/Content/topsystec/css/style.css")
+    <!-- Responsive styles-->
+    @Styles.Render("~/Content/topsystec/css/responsive.css")
+    <!-- FontAwesome -->
+    @Styles.Render("~/Content/topsystec/css/font-awesome.min.css")
+    <!-- Animation -->
+    @Styles.Render("~/Content/topsystec/css/animate.css")
+    <!-- Owl Carousel -->
+    @Styles.Render("~/Content/topsystec/css/owl.carousel.min.css")
+    @Styles.Render("~/Content/topsystec/css/owl.theme.default.min.css")
+    <!-- Colorbox -->
+    @Styles.Render("~/Content/topsystec/css/colorbox.css")
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+        <script src="~/Content/topsystec/js/html5shiv.js"></script>
+        <script src="~/Content/topsystec/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div id="wrapper">
+
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
+            @RenderPage("~/Views/Shared/_Menu.cshtml")
+        </div>
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <div class="container">
+            @RenderPage("~/Views/Shared/_Footer.cshtml")
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <!-- initialize jQuery Library -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    @Scripts.Render("~/Content/topsystec/js/jquery.js")
+    <!-- Bootstrap jQuery -->
+    @Scripts.Render("~/Content/topsystec/js/bootstrap.min.js")
+    <!-- Owl Carousel -->
+    @Scripts.Render("~/Content/topsystec/js/owl.carousel.min.js")
+    <!-- Color box -->
+    @Scripts.Render("~/Content/topsystec/js/jquery.colorbox.js")
+    <!-- Isotope -->
+    @Scripts.Render("~/Content/topsystec/js/isotope.js")
+    @Scripts.Render("~/Content/topsystec/js/ini.isotope.js")
+
+
+    <!-- Google Map API Key-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <!-- Google Map Plugin-->
+    @Scripts.Render("~/Content/topsystec/js/gmap3.js")
+
+    <!-- Template custom -->
+    @Scripts.Render("~/Content/topsystec/js/custom.js")
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
