@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.5</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,6 +47,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -99,9 +103,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -112,14 +113,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BairrosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -127,111 +124,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\constra_theme\404.html" />
-    <Content Include="Content\constra_theme\about.html" />
-    <Content Include="Content\constra_theme\contact-form.php" />
-    <Content Include="Content\constra_theme\contact.html" />
-    <Content Include="Content\constra_theme\css\animate.css" />
-    <Content Include="Content\constra_theme\css\bootstrap.min.css" />
-    <Content Include="Content\constra_theme\css\colorbox.css" />
-    <Content Include="Content\constra_theme\css\font-awesome.min.css" />
-    <Content Include="Content\constra_theme\css\owl.carousel.min.css" />
-    <Content Include="Content\constra_theme\css\owl.theme.default.min.css" />
-    <Content Include="Content\constra_theme\css\responsive.css" />
-    <Content Include="Content\constra_theme\css\style.css" />
-    <Content Include="Content\constra_theme\faq.html" />
-    <Content Include="Content\constra_theme\fonts\fontawesome-webfont.svg" />
-    <Content Include="Content\constra_theme\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\constra_theme\images\banner\banner1.jpg" />
-    <Content Include="Content\constra_theme\images\banner\banner2.jpg" />
-    <Content Include="Content\constra_theme\images\banner\banner3.jpg" />
-    <Content Include="Content\constra_theme\images\clients\client1.png" />
-    <Content Include="Content\constra_theme\images\clients\client2.png" />
-    <Content Include="Content\constra_theme\images\clients\client3.png" />
-    <Content Include="Content\constra_theme\images\clients\client4.png" />
-    <Content Include="Content\constra_theme\images\clients\client5.png" />
-    <Content Include="Content\constra_theme\images\clients\client6.png" />
-    <Content Include="Content\constra_theme\images\clients\testimonial1.png" />
-    <Content Include="Content\constra_theme\images\clients\testimonial2.png" />
-    <Content Include="Content\constra_theme\images\clients\testimonial3.png" />
-    <Content Include="Content\constra_theme\images\controls.png" />
-    <Content Include="Content\constra_theme\images\crossword.png" />
-    <Content Include="Content\constra_theme\images\footer-logo.png" />
-    <Content Include="Content\constra_theme\images\icon-image\fact1.png" />
-    <Content Include="Content\constra_theme\images\icon-image\fact2.png" />
-    <Content Include="Content\constra_theme\images\icon-image\fact3.png" />
-    <Content Include="Content\constra_theme\images\icon-image\fact4.png" />
-    <Content Include="Content\constra_theme\images\icon-image\service-icon1.png" />
-    <Content Include="Content\constra_theme\images\icon-image\service-icon2.png" />
-    <Content Include="Content\constra_theme\images\icon-image\service-icon3.png" />
-    <Content Include="Content\constra_theme\images\icon-image\service-icon4.png" />
-    <Content Include="Content\constra_theme\images\icon-image\service-icon5.png" />
-    <Content Include="Content\constra_theme\images\icon-image\service-icon6.png" />
-    <Content Include="Content\constra_theme\images\logo.png" />
-    <Content Include="Content\constra_theme\images\news\avator1.png" />
-    <Content Include="Content\constra_theme\images\news\avator2.png" />
-    <Content Include="Content\constra_theme\images\news\avator3.png" />
-    <Content Include="Content\constra_theme\images\news\news1.jpg" />
-    <Content Include="Content\constra_theme\images\news\news2.jpg" />
-    <Content Include="Content\constra_theme\images\news\news3.jpg" />
-    <Content Include="Content\constra_theme\images\parallax1.jpg" />
-    <Content Include="Content\constra_theme\images\projects\parallax1.jpg" />
-    <Content Include="Content\constra_theme\images\projects\project1.jpg" />
-    <Content Include="Content\constra_theme\images\projects\project2.jpg" />
-    <Content Include="Content\constra_theme\images\projects\project3.jpg" />
-    <Content Include="Content\constra_theme\images\projects\project4.jpg" />
-    <Content Include="Content\constra_theme\images\projects\project5.jpg" />
-    <Content Include="Content\constra_theme\images\projects\project6.jpg" />
-    <Content Include="Content\constra_theme\images\services\service-center.jpg" />
-    <Content Include="Content\constra_theme\images\services\service1.jpg" />
-    <Content Include="Content\constra_theme\images\services\service2.jpg" />
-    <Content Include="Content\constra_theme\images\services\service3.jpg" />
-    <Content Include="Content\constra_theme\images\services\service4.jpg" />
-    <Content Include="Content\constra_theme\images\services\service5.jpg" />
-    <Content Include="Content\constra_theme\images\services\service6.jpg" />
-    <Content Include="Content\constra_theme\images\slider-main\bg1.jpg" />
-    <Content Include="Content\constra_theme\images\slider-main\bg2.jpg" />
-    <Content Include="Content\constra_theme\images\slider-main\bg3.jpg" />
-    <Content Include="Content\constra_theme\images\slider-main\bg4.jpg" />
-    <Content Include="Content\constra_theme\images\slider-main\bg5.jpg" />
-    <Content Include="Content\constra_theme\images\slider-pages\slide-page1.jpg" />
-    <Content Include="Content\constra_theme\images\slider-pages\slide-page2.jpg" />
-    <Content Include="Content\constra_theme\images\slider-pages\slide-page3.jpg" />
-    <Content Include="Content\constra_theme\images\team\team1.jpg" />
-    <Content Include="Content\constra_theme\images\team\team2.jpg" />
-    <Content Include="Content\constra_theme\images\team\team3.jpg" />
-    <Content Include="Content\constra_theme\images\team\team4.jpg" />
-    <Content Include="Content\constra_theme\images\team\team5.jpg" />
-    <Content Include="Content\constra_theme\images\team\team6.jpg" />
-    <Content Include="Content\constra_theme\index-2.html" />
-    <Content Include="Content\constra_theme\index.html" />
-    <Content Include="Content\constra_theme\js\bootstrap.min.js" />
-    <Content Include="Content\constra_theme\js\custom.js" />
-    <Content Include="Content\constra_theme\js\gmap3.js" />
-    <Content Include="Content\constra_theme\js\html5shiv.js" />
-    <Content Include="Content\constra_theme\js\ini.isotope.js" />
-    <Content Include="Content\constra_theme\js\isotope.js" />
-    <Content Include="Content\constra_theme\js\jquery.colorbox.js" />
-    <Content Include="Content\constra_theme\js\jquery.js" />
-    <Content Include="Content\constra_theme\js\owl.carousel.min.js" />
-    <Content Include="Content\constra_theme\js\respond.min.js" />
-    <Content Include="Content\constra_theme\js\wow.min.js" />
-    <Content Include="Content\constra_theme\news-left-sidebar.html" />
-    <Content Include="Content\constra_theme\news-right-sidebar.html" />
-    <Content Include="Content\constra_theme\news-single.html" />
-    <Content Include="Content\constra_theme\pricing.html" />
-    <Content Include="Content\constra_theme\projects-single.html" />
-    <Content Include="Content\constra_theme\projects.html" />
-    <Content Include="Content\constra_theme\service-single.html" />
-    <Content Include="Content\constra_theme\services.html" />
-    <Content Include="Content\constra_theme\team.html" />
-    <Content Include="Content\constra_theme\testimonials.html" />
-    <Content Include="Content\constra_theme\typography.html" />
     <Content Include="Content\topsystec\css\animate.css" />
+    <Content Include="Content\topsystec\css\bootstrap.css" />
     <Content Include="Content\topsystec\css\bootstrap.min.css" />
     <Content Include="Content\topsystec\css\colorbox.css" />
     <Content Include="Content\topsystec\css\font-awesome.min.css" />
@@ -268,6 +162,7 @@
     <Content Include="Content\topsystec\imgs\icon-image\service-icon5.png" />
     <Content Include="Content\topsystec\imgs\icon-image\service-icon6.png" />
     <Content Include="Content\topsystec\imgs\logo.png" />
+    <Content Include="Content\topsystec\imgs\logos\logo_topsystec_250x69.png" />
     <Content Include="Content\topsystec\imgs\news\avator1.png" />
     <Content Include="Content\topsystec\imgs\news\avator2.png" />
     <Content Include="Content\topsystec\imgs\news\avator3.png" />
@@ -304,6 +199,47 @@
     <Content Include="Content\topsystec\imgs\team\team5.jpg" />
     <Content Include="Content\topsystec\imgs\team\team6.jpg" />
     <Content Include="Content\topsystec\imgs\logos\logo_topsystec_txt_500x200.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\banner_1600x300b.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\banner_1600x300c.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\banner_1600x300d.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\banner_1600x300e.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\banner_1600x300f.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\banner_1600x300_1.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\capa_video_vigilancia.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_centro_servicos.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_centro_servicos1.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_centro_servicos2.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_1.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_2.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_3.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_4.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_5.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\news_750x450a.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\news_img_750x450a.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\news_img_750x450b.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\news_img_750x450c.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\news_img_750x450d.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\news_img_750x450e.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slider_1600x800d.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slider_1600x800_1.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slider_1600x800_2.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slider_1600x800_3.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330a.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330b.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330e.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330f.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330g.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330h.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330i.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330k.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330l.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330m.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330n.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330o.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330p.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_pages_555x330q.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\slide_penta_topsystec1.jpg" />
     <Content Include="Content\topsystec\js\bootstrap.min.js" />
     <Content Include="Content\topsystec\js\custom.js" />
     <Content Include="Content\topsystec\js\gmap3.js" />
@@ -345,12 +281,49 @@
     <Content Include="Content\topsystec\lib\popper\popper.min.js" />
     <Content Include="Content\topsystec\lib\scrollreveal\scrollreveal.js" />
     <Content Include="Content\topsystec\lib\scrollreveal\scrollreveal.min.js" />
+    <Content Include="Content\topsystec\parsa_template\css\style.css" />
+    <Content Include="Content\topsystec\parsa_template\images\author.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\banner-img.png" />
+    <Content Include="Content\topsystec\parsa_template\images\contact.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\featured-post\post-1.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\featured-post\post-2.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\featured-post\post-3.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\featured-post\post-4.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\featured-post\post-5.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\logo.png" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-1.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-10.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-11.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-12.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-13.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-2.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-3.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-4.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-5.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-6.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-7.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-8.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\masonary-post\post-9.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\post-img.jpg" />
+    <Content Include="Content\topsystec\parsa_template\images\post-single.jpg" />
+    <Content Include="Content\topsystec\parsa_template\js\script.js" />
+    <Content Include="Content\topsystec\parsa_template\plugins\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\topsystec\parsa_template\plugins\bootstrap\bootstrap.min.js" />
+    <Content Include="Content\topsystec\parsa_template\plugins\headroom\headroom.js" />
+    <Content Include="Content\topsystec\parsa_template\plugins\instafeed\instafeed.min.js" />
+    <Content Include="Content\topsystec\parsa_template\plugins\jQuery\jquery.min.js" />
+    <Content Include="Content\topsystec\parsa_template\plugins\masonry\masonry.js" />
+    <Content Include="Content\topsystec\parsa_template\plugins\reading-time\readingTime.min.js" />
+    <Content Include="Content\topsystec\parsa_template\plugins\slick\ajax-loader.gif" />
+    <Content Include="Content\topsystec\parsa_template\plugins\slick\fonts\slick.svg" />
+    <Content Include="Content\topsystec\parsa_template\plugins\slick\slick.css" />
+    <Content Include="Content\topsystec\parsa_template\plugins\slick\slick.min.js" />
+    <Content Include="Content\topsystec\parsa_template\plugins\smooth-scroll\smooth-scroll.js" />
+    <Content Include="Content\topsystec\parsa_template\plugins\themify-icons\fonts\themify.svg" />
+    <Content Include="Content\topsystec\parsa_template\plugins\themify-icons\themify-icons.css" />
+    <Content Include="Content\topsystec\video\vigilancia_colaborativa.mp4" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\topsystec\lib\bootstrap\css\bootstrap.min.css.map" />
     <Content Include="Content\topsystec\lib\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="Content\topsystec\lib\font-awesome\fonts\fontawesome-webfont.eot" />
@@ -364,15 +337,6 @@
     <Content Include="Content\topsystec\lib\ionicons\fonts\ionicons.woff2" />
     <Content Include="Content\topsystec\lib\owlcarousel\LICENSE" />
     <Content Include="Content\topsystec\lib\popper\popper.min.js.map.json" />
-    <Content Include="Content\constra_theme\fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\constra_theme\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Content\constra_theme\fonts\fontawesome-webfont.woff" />
-    <Content Include="Content\constra_theme\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Content\constra_theme\fonts\FontAwesome.otf" />
-    <Content Include="Content\constra_theme\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\constra_theme\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\constra_theme\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\constra_theme\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Content\topsystec\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\topsystec\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\topsystec\fonts\fontawesome-webfont.woff" />
@@ -382,17 +346,62 @@
     <Content Include="Content\topsystec\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\topsystec\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\topsystec\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Content\topsystec\parsa_template\css\maps\style.css.map" />
+    <Content Include="Content\topsystec\parsa_template\plugins\fonts\hanskendrick-regular-webfont.woff" />
+    <Content Include="Content\topsystec\parsa_template\plugins\fonts\hanskendrick-regular-webfont.woff2" />
+    <Content Include="Content\topsystec\parsa_template\plugins\slick\fonts\slick.eot" />
+    <Content Include="Content\topsystec\parsa_template\plugins\slick\fonts\slick.ttf" />
+    <Content Include="Content\topsystec\parsa_template\plugins\slick\fonts\slick.woff" />
+    <Content Include="Content\topsystec\parsa_template\plugins\themify-icons\fonts\themify.eot" />
+    <Content Include="Content\topsystec\parsa_template\plugins\themify-icons\fonts\themify.ttf" />
+    <Content Include="Content\topsystec\parsa_template\plugins\themify-icons\fonts\themify.woff" />
+    <Content Include="Content\topsystec\parsa_template\scss\style.scss" />
+    <Content Include="Content\topsystec\parsa_template\scss\templates\_blog.scss" />
+    <Content Include="Content\topsystec\parsa_template\scss\templates\_homepage.scss" />
+    <Content Include="Content\topsystec\parsa_template\scss\templates\_navigation.scss" />
+    <Content Include="Content\topsystec\parsa_template\scss\_buttons.scss" />
+    <Content Include="Content\topsystec\parsa_template\scss\_common.scss" />
+    <Content Include="Content\topsystec\parsa_template\scss\_mixins.scss" />
+    <Content Include="Content\topsystec\parsa_template\scss\_typography.scss" />
+    <Content Include="Content\topsystec\parsa_template\scss\_variables.scss" />
+    <None Include="Properties\PublishProfiles\topsystec.com - Web Deploy.pubxml" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -410,29 +419,38 @@
     <Content Include="Views\Home\Default.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Shared\_Menu2.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Bairros\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
@@ -456,12 +474,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
