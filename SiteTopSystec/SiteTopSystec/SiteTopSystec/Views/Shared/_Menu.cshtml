@@ -63,85 +63,59 @@
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio <i class="fa fa-angle-down"></i></a>
-                                @*<ul class="dropdown-menu" role="menu">
-                                        <li><a href="index.html">Inicio</a></li>
-                                        <li class="active"><a href="index-2.html">Home Two</a></li>
-                                    </ul>*@
-                            </li>
+                                @Html.ActionLink("Início", "Index", "Home", null, new { @class = "dropdown-toggle" })
 
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    Bairros <i class="fa fa-angle-down"></i>
-                                </a>
-                                @*<ul class="dropdown-menu" role="menu">
-                                        <li><a href="about.html">Bairros</a></li>
-                                        <li><a href="team.html">Empresas</a></li>
-                                        <li><a href="testimonials.html">Condominios</a></li>
-                                        <li><a href="faq.html">Representante</a></li>
-                                        <li><a href="pricing.html">Contato</a></li>
-                                    </ul>*@
                             </li>
-
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    Empresas <i class="fa fa-angle-down"></i>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Soluções<i class="fa fa-angle-down"></i>
                                 </a>
-                                @*<ul class="dropdown-menu" role="menu">
-                                        <li><a href="projects.html">Projects All</a></li>
-                                        <li><a href="projects-single.html">Projects Single</a></li>
-                                    </ul>*@
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    Condominios <i class="fa fa-angle-down"></i>
-                                </a>
-                                @*<ul class="dropdown-menu" role="menu">
-                                        <li><a href="services.html">Services All</a></li>
-                                        <li><a href="service-single.html">Services Single</a></li>
-                                    </ul>*@
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    Representante <i class="fa fa-angle-down"></i>
-                                </a>
-                                @*<ul class="dropdown-menu" role="menu">
-                                        <li><a href="typography.html">Typography</a></li>
-                                        <li><a href="404.html">404</a></li>
-                                        <li class="dropdown-submenu">
-                                            <a href="#.">Parent Menu</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Child Menu 1</a></li>
-                                                <li><a href="#">Child Menu 2</a></li>
-                                                <li><a href="#">Child Menu 3</a></li>
-                                            </ul>
+                                <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            @Html.ActionLink("Bairros", "Bairro", "Solucoes", null, new { @class = "" })
                                         </li>
-                                    </ul>*@
+                                        <li>
+                                            @Html.ActionLink("Empresas", "Empresa", "Solucoes", null, new { @class = "" })
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("Condomínios", "Condominio", "Solucoes", null, new { @class = "" })
+                                        </li>
+                                </ul>
                             </li>
-
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contato <i class="fa fa-angle-down"></i></a>
-                                @*<ul class="dropdown-menu" role="menu">
-                                        <li><a href="news-left-sidebar.html">News Left Sidebar</a></li>
-                                        <li><a href="news-right-sidebar.html">News Right Sidebar</a></li>
-                                        <li><a href="news-single.html">News Single</a></li>
-                                    </ul>*@
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipamentos<i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        @Html.ActionLink("Informática", "Informatica", "Equipamento", null, new { @class = "" })
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Câmeras", "Cameras", "Equipamento", null, new { @class = "" })
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Outros", "Outros", "Equipamento", null, new { @class = "" })
+                                    </li>
+                                </ul>
                             </li>
-
                             <li>
-                            @*<a href="contact.html">Contact</a>*@
+                                @Html.ActionLink("Representantes", "Index", "Representante", null, new { @class = "dropdown-toggle" })
+
+                            </li>
+                            <li>
+                                @Html.ActionLink("Fale Conosco", "Index", "Contato", null, new { @class = "dropdown-toggle" })
+
+                            </li>
+                            <li>
+                                @Html.ActionLink("Quem Somos", "Index", "QuemSomos", null, new { @class = "dropdown-toggle" })
+
                             </li>
                             <li class="header-get-a-quote">
-                                @*<a class="btn btn-primary" href="#">Get Free Quote</a>*@
+                                @*<a class="btn btn-primary" href="#">  Orçamento  </a>*@
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </li>
-
                         </ul>
                         <!--/ Nav ul end -->
                     </div>
                     <!--/ Collapse end -->
-
                 </div><!-- Site Navbar inner end -->
 
             </nav>

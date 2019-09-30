@@ -117,7 +117,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BairrosController.cs" />
+    <Compile Include="Controllers\ContatoController.cs" />
+    <Compile Include="Controllers\EquipamentoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\QuemSomosController.cs" />
+    <Compile Include="Controllers\RepresentanteController.cs" />
+    <Compile Include="Controllers\SolucoesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -402,6 +407,8 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Views\Equipamento\Informatica.cshtml" />
+    <Content Include="Views\Equipamento\Outros.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -431,6 +438,13 @@
     <Content Include="Views\Shared\_Menu2.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
     <Content Include="Views\Bairros\Index.cshtml" />
+    <Content Include="Views\Solucoes\Bairro.cshtml" />
+    <Content Include="Views\Solucoes\Empresa.cshtml" />
+    <Content Include="Views\Solucoes\Condominio.cshtml" />
+    <Content Include="Views\Equipamento\Cameras.cshtml" />
+    <Content Include="Views\Representante\Index.cshtml" />
+    <Content Include="Views\Contato\Index.cshtml" />
+    <Content Include="Views\QuemSomos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
