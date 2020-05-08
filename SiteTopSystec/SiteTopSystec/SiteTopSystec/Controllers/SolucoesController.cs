@@ -13,11 +13,33 @@ namespace SiteTopSystec.Controllers
         {
             return View();
         }
+
         public ActionResult Condominio()
         {
             return View();
         }
+
         public ActionResult Empresa()
+        {
+            return View();
+        }
+
+        public ActionResult Empresa2()
+        {
+            return View();
+        }
+
+        public ActionResult Detecta()
+        {
+            return View();
+        }
+
+        public ActionResult Imprensa()
+        {
+            return View();
+        }
+
+        public ActionResult VigilanciaSolidaria()
         {
             return View();
         }

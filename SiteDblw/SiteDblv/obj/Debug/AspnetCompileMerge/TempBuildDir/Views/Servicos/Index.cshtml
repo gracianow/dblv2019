@@ -1,0 +1,184 @@
+﻿@{
+    ViewData["Title"] = "Serviços";
+}
+
+<!-- Subhead
+================================================== -->
+<section id="subintro">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <h3><strong>Serviços</strong></h3>
+            </div>
+            <div class="span8">
+                <ul class="breadcrumb notop">
+                    <li>
+                        @Html.ActionLink("Início", "Index", "Home", null,
+                                          new {@class= "navbar-brand" })
+                        <span class="divider">/</span>
+                    </li>
+                    <li class="active">Serviços</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="maincontent">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <div class="well">
+                    <div class="centered e_bounce">
+                        <i class="icon-bg-light icon-circled icon-windows icon-3x active"></i>
+                        <i class="icon-bg-light icon-circled icon-linux icon-3x active"></i>
+                        <i class="icon-bg-light icon-circled icon-apple icon-3x active"></i>
+                        <h4><strong>Manutenção</strong></h4>
+                        <p>
+                            Consertamos e configuramos seu PC ou notebook: Windows, Linux e Apple.
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                            <i class="icon-chevron-right"></i> Upgrade e configuração
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Lentidão, travamento, virus são pragas que ameaçam seu computador. Configuramos, damos manutenção e otimizamos o funcionamento do seu PC ou Notebook em: Windows, Linux e Apple.
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="priceBox special">
+                    <h4 class="light">Reinstalação com Backup</h4>
+                    <hr>
+                    <span class="emphasis">
+                        R$ 85,00<br /><em> Taxa única </em>
+                    </span>
+                    <hr>
+                    <span>
+                        Formatação <i class="icon-chevron-right"></i>
+                        R$ 70,00 <br /><em> Taxa única </em>
+                    </span>
+                    <hr>
+                    <span>Upgrade<br /><em> peça um orçamento </em></span>
+                    <hr>
+                    <span class="emphasis-2">
+                        @Html.ActionLink("Solicite uma visita", "Index", "Contato", null,
+                                              new {@class="btn btn-large btn-color btn-rounded"})
+                    </span>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="well">
+                    <div class="centered e_bounce">
+                        <i class="icon-bg-light icon-circled icon-bitcoin icon-3x active"></i>
+                        <h4><strong>Consultoria ERP</strong></h4>
+                        <p>
+                            Analisamos suas necessidades e inicamos a implantação do ERP para informatizar seu negócio.
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            <i class="icon-chevron-right"></i> ERP para informatizar seu negócio
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Qual a posição do estoque? O cadastro está vinculado com as Notas Fiscais ou tudo tem que ser preenchido o tempo todo?
+                            Chega de retrabalho e de tarefas repetitivas! Sua empresa na Era Digital, dê adeus as planilhas!
+                            ERP - Tudo Online: Cadastro, Nota Fiscal Eletrônica, Controle Financeiro, Controle de Estoque, Vendas, e Serviços.
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="priceBox special">
+                    <h4 class="light">ERP para a Pequena Empresa</h4>
+                    <hr>
+                    <span class="emphasis">
+                        R$ 89,00<br /><em> mensais </em>
+                    </span>
+                    <hr>
+                    <span>
+                        Plano de Negócio <i class="icon-chevron-right"></i>
+                        R$ 300,00<br /><em> Taxa única </em>
+                    </span>
+                    <hr>
+                    <span>
+                        Implantação <i class="icon-chevron-right"></i>
+                        R$ 900,00<br /><em> Taxa única </em>
+                    </span>
+                    <hr>
+                    <span class="emphasis-2">
+                        @Html.ActionLink("Solicite uma visita", "Index", "Contato", null,
+                                              new {@class="btn btn-large btn-color btn-rounded"})
+                    </span>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="well">
+                    <div class="centered e_bounce">
+                        <i class="icon-bg-light icon-circled fas fa-wifi icon-3x active"></i>
+                        <h4><strong>Otimização de WIFI</strong></h4>
+                        <p>
+                            Seu WIFI só pega bem na sala? Cai toda hora? Otimizamos sua internet.
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            <i class="icon-chevron-right"></i> Otimização de WIFI
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Seus problemas com o WIFI podem ser solucionados com a instalação de repetidores, aumentamos a segurança contra intrusos que usam sua internet e a deixam mais lenta.
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="priceBox special">
+                    <h4 class="light">Repetidor</h4>
+                    <hr>
+                    <span class="emphasis">
+                        R$ 135,00 <br /><em> instalação + equipamento </em>
+                    </span>
+                    <hr>
+                    <span>
+                        Configurar segurança <i class="icon-chevron-right"></i>
+                        R$ 70,00 <br /><em> Taxa única </em>
+                    </span>
+                    <hr>
+                    <span>
+                        Upgrade <br />
+                        <em> peça um orçamento </em>
+                    </span>
+                    <hr>
+                    <span class="emphasis-2">
+                        @Html.ActionLink("Solicite uma visita", "Index", "Contato", null,
+                                                  new {@class="btn btn-large btn-color btn-rounded"})
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2867053-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2867053-3');
+</script>

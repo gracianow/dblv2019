@@ -9,7 +9,7 @@ namespace ApcWebSite.Controllers
     public class QuemSomosController : Controller
     {
         // GET: QuemSomos
-        public ActionResult QuemSomos()
+        public ActionResult Index()
         {
             return View();
         }

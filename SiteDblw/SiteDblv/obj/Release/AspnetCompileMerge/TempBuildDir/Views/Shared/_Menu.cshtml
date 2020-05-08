@@ -1,0 +1,57 @@
+﻿<header>
+    <!-- Navbar
+    ================================================== -->
+    <div class="row-fluid">
+        <div class="cbp-af-header">
+            <div class=" cbp-af-inner">
+                <div class="container">
+                    <div class="row-fluid">
+                        <div class=" col-md-4 span4">
+                            <!-- logo -->
+                            <div class="logo">
+                                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+                                    <img class="" src="~/Content/assets/img/icons/dblv_logo_home_bco224x66.png" 
+                                         alt="" style="width:224px; height:66px;" />
+                                </a>
+                            </div>
+                            <!-- end logo -->
+                        </div>
+                        <div class=" col-md-8 span8">
+                            <!-- top menu -->
+                            <div class="navbar">
+                                <div class="navbar-inner">
+                                    <nav>
+                                        <ul class="nav topnav">
+                                            <li class="">
+                                                @Html.ActionLink("Início", "Index", "Home", null, new { @class = "" })
+                                            </li>
+                                            <li class="">
+                                                @Html.ActionLink("Consultoria", "Index", "Consultoria", null, new { @class = "" })
+                                            </li>
+                                            <li class="">
+                                                @Html.ActionLink("Marketing", "Index", "Marketing", null, new { @class = "" })
+                                            </li>
+                                            <li class="">
+                                                @Html.ActionLink("Serviços", "Index", "Servicos", null, new { @class = "" })
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("LGPD", "Index", "LGPD", null, new { @class = "" })
+                                            </li>
+                                            <li>
+                                                @Html.ActionLink("Contato", "Index", "Contato", null, new { @class = "" })
+                                            </li>
+                                            @*<li>
+            @Html.ActionLink("Login", "Index", "Construcao", null, new { @class = "" })
+        </li>*@
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <!-- end menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

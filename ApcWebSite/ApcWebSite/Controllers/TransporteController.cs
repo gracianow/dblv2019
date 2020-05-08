@@ -9,7 +9,7 @@ namespace ApcWebSite.Controllers
     public class TransporteController : Controller
     {
         // GET: Transporte
-        public ActionResult Transporte()
+        public ActionResult Index()
         {
             return View();
         }

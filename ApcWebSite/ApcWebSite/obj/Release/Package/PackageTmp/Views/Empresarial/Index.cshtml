@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Empresarial";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<!--==========================
+      About Us Section
+    ============================-->
+<section id="about">
+    <div class="container">
+
+        <header class="section-header">
+            <br />
+            <h3><img src="~/Content/img/apc/logos/apc_logo_480x73.png" style="max-width:20%" /></h3>
+            <h3>Seguro Empresarial na medida certa</h3>
+            <p>
+                Foco nas metas e detalhes, dedicação total na busca de qualidade e agilidade. Não há tempo nem espaço para imprevistos. <br />
+                É aqui que entra o seguro empresarial, os riscos ao seu negócio serão mapeados e adequados a sua atividade comercial. <br />
+                Assim você se dedica ao que é mais importante e deixa sua segurança conosco.
+            </p>
+        </header>
+
+        <div class="row about-cols">
+
+            <div class="col-md-4 wow fadeInUp">
+                <div class="about-col">
+                    <div class="img">
+                        <img src="~/Content/img/about-mission.jpg" alt="" class="img-fluid">
+                        <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+                    </div>
+                    <h2 class="title"><a href="#">Sem riscos</a></h2>
+                    <p>
+                        Apólices com coberturas flexíveis de acordo com as necessidades da empresa e sua atividade comercial.
+                        <br /><br /><br />
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="about-col">
+                    <div class="img">
+                        <img src="~/Content/img/about-plan.jpg" alt="" class="img-fluid">
+                        <div class="icon"><i class="ion-ios-list-outline"></i></div>
+                    </div>
+                    <h2 class="title"><a href="#">Resiliência</a></h2>
+                    <p>
+                        Recuperar rapidamente sua empresa dos danos que venham a acontecer no processo do seu negócio, desde pequenos ajustes a acidentes mais graves.
+                        <br /><br />
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="about-col">
+                    <div class="img">
+                        <img src="~/Content/img/about-vision.jpg" alt="" class="img-fluid">
+                        <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+                    </div>
+                    <h2 class="title"><a href="#">Responsabilidade</a></h2>
+                    <p>
+                        O seguro empresarial pode garantir o pagamento de indenizações a veículos ou bens de terceiros que estejam sob a guarda do empregador, esta é a responsabilidade civil.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-12" style="text-align:center !important;">
+                @Html.ActionLink("Peça já sua cotação para a All Protection!", "Index", "Cotacao",
+               null, new { @class = "btn btn-primary active" })
+            </div>
+            <br />
+        </div>
+    </div>
+</section><!-- #about -->

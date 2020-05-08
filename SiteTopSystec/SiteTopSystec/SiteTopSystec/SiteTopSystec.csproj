@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SiteTopSystec</RootNamespace>
     <AssemblyName>SiteTopSystec</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>3.5</TypeScriptToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,16 +53,14 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -103,6 +102,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -167,7 +167,16 @@
     <Content Include="Content\topsystec\imgs\icon-image\service-icon5.png" />
     <Content Include="Content\topsystec\imgs\icon-image\service-icon6.png" />
     <Content Include="Content\topsystec\imgs\logo.png" />
+    <Content Include="Content\topsystec\imgs\logos\img_parceiros_195x105_amazon.png" />
+    <Content Include="Content\topsystec\imgs\logos\img_parceiros_195x105_dell.png" />
+    <Content Include="Content\topsystec\imgs\logos\img_parceiros_195x105_hikv.png" />
+    <Content Include="Content\topsystec\imgs\logos\img_parceiros_195x105_ibm.png" />
+    <Content Include="Content\topsystec\imgs\logos\img_parceiros_195x105_legrand.png" />
+    <Content Include="Content\topsystec\imgs\logos\img_parceiros_195x105_microsoft.png" />
+    <Content Include="Content\topsystec\imgs\logos\img_parceiros_195x105_vip.png" />
     <Content Include="Content\topsystec\imgs\logos\logo_topsystec_250x69.png" />
+    <Content Include="Content\topsystec\imgs\logos\logo_topsystec_globo_110x110.png" />
+    <Content Include="Content\topsystec\imgs\logos\logo_topsystec_globo_115x115.png" />
     <Content Include="Content\topsystec\imgs\news\avator1.png" />
     <Content Include="Content\topsystec\imgs\news\avator2.png" />
     <Content Include="Content\topsystec\imgs\news\avator3.png" />
@@ -214,11 +223,41 @@
     <Content Include="Content\topsystec\imgs\topsystec\img_centro_servicos.png" />
     <Content Include="Content\topsystec\imgs\topsystec\img_centro_servicos1.jpg" />
     <Content Include="Content\topsystec\imgs\topsystec\img_centro_servicos2.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_centro_servicos3.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_centro_servicos4.png" />
     <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_1.png" />
     <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_2.png" />
     <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_3.png" />
     <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_4.png" />
     <Content Include="Content\topsystec\imgs\topsystec\img_servicos360x260_5.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_180x165_logo_abese.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_180x165_logo_assespro.jpg" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_180x165_logo_dell.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_330x165_logo_jornal1.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_330x165_logo_jornal2.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_330x165_logo_microsoft.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330a.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330b.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330c.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330d.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330e.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330f.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330g.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330h.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330i.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330j.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330k.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330l.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330m.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330n.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330o.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330p.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330q.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330r.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330s.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330t.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330u.png" />
+    <Content Include="Content\topsystec\imgs\topsystec\img_tps_550x330v.png" />
     <Content Include="Content\topsystec\imgs\topsystec\news_750x450a.jpg" />
     <Content Include="Content\topsystec\imgs\topsystec\news_img_750x450a.jpg" />
     <Content Include="Content\topsystec\imgs\topsystec\news_img_750x450b.jpg" />
@@ -409,6 +448,11 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Views\Equipamento\Informatica.cshtml" />
     <Content Include="Views\Equipamento\Outros.cshtml" />
+    <Content Include="Views\Solucoes\Bairro.cshtml" />
+    <Content Include="Views\Solucoes\Detecta.cshtml" />
+    <Content Include="Views\Solucoes\Empresa.cshtml" />
+    <Content Include="Views\Solucoes\Empresa2.cshtml" />
+    <Content Include="Views\Solucoes\VigilanciaSolidaria.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -438,13 +482,13 @@
     <Content Include="Views\Shared\_Menu2.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
     <Content Include="Views\Bairros\Index.cshtml" />
-    <Content Include="Views\Solucoes\Bairro.cshtml" />
-    <Content Include="Views\Solucoes\Empresa.cshtml" />
     <Content Include="Views\Solucoes\Condominio.cshtml" />
     <Content Include="Views\Equipamento\Cameras.cshtml" />
     <Content Include="Views\Representante\Index.cshtml" />
     <Content Include="Views\Contato\Index.cshtml" />
     <Content Include="Views\QuemSomos\Index.cshtml" />
+    <Content Include="Views\Solucoes\Empresa3.cshtml" />
+    <Content Include="Views\Solucoes\Imprensa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

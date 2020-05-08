@@ -1,0 +1,119 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewBag.Title = "Soluções para Bairros";
+}
+
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="sidebar sidebar-left">
+                    <div class="widget">
+                        <h3 class="widget-title">Soluções</h3>
+                        <ul class="nav nav-tabs nav-stacked service-menu">
+                            <li>
+                                @Html.ActionLink("Bairros", "VigilanciaSolidaria", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Vigilância Solidária", "VigilanciaSolidaria", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li class="active">
+                                @Html.ActionLink("Projeto Detecta", "Detecta", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Imprensa", "Imprensa", "Solucoes", null, new { @class = "" })
+                            </li>
+                        </ul>
+                    </div><!-- Widget end -->
+
+                </div><!-- Sidebar end -->
+            </div><!-- Sidebar Col end -->
+
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="content-inner-page">
+
+                    <h2 class="column-title mrt-0">Projeto DETECTA</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="font-weight:bold">
+                                A TOPSYSTEC é a instaladora física da solução na cidade de Jundiaí-SP.
+                            </p>
+                            <p>
+                                Para dar maior eficiência ao planejamento do patrulhamento das vias públicas e das investigações criminais,
+                                São Paulo implementou o Detecta, sistema inteligente de monitoramento criminal. Nela, o sistema foi aprimorado
+                                para ser o mesmo utilizado pela polícia de Nova Iorque há vários anos.
+                                A experiência na cidade norte-americana desenvolveu alertas para 10 mil padrões de crimes. Esses alertas podem
+                                ser alterados, modificados para a realidade brasileira e podem ser adicionados novos alertas.
+                                O Detecta emiti alarmes automáticos para ajudar no trabalho policial. Isso permite que PMs e
+                                policiais civis recebam informações de inteligência sem que seja necessário operar o sistema a todo momento.
+                            </p>
+                            <p>
+                                Por exemplo, um suspeito foge em um carro vermelho em que só se sabe parte do número da placa. Com apenas isso,
+                                o sistema pode ser configurado para localizar todos os veículos com aquele número parcial, da mesma cor,
+                                e apresentar essas localizações em um mapa.
+                                Além disso, a viatura mais próxima será alertada dessa ocorrência. Essas localizações podem ser feitas por
+                                sensores de leitura de placas ou por câmeras que também têm essa capacidade.
+                            </p>
+                        </div><!-- col end -->
+                    </div><!-- 1st row end-->
+
+                    <div id="page-slider" class="owl-carousel owl-theme page-slider page-slider-small">
+                        <div class="item">
+                            <img src="~/Content/topsystec/imgs/topsystec/img_tps_550x330n.png" alt="" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/topsystec/imgs/topsystec/img_tps_550x330e.png" alt="" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/topsystec/imgs/topsystec/img_tps_550x330h.png" alt="" />
+                        </div>
+                    </div><!-- Page slider end -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Um veículo que tenha passado nas proximidades de dois ou mais roubos com dias
+                                ou semanas de diferença pode passar a ser acompanhado pelo sistema.
+                                Isso pode acontecer mesmo que as vítimas não tenham reparado no veículo,
+                                mas os leitores de placa o tenham identificado no local.
+                            </p>
+                            <p>
+                                O projeto Detecta contribui ainda com o planejamento das ações policiais,
+                                pois permite a identificação de padrões de crimes praticados em cada região
+                                a partir dos registros realizados. Então é possível saber com precisão datas,
+                                horários e locais em que mais acontecem determinados crimes em cada região,
+                                além de possíveis migrações ou mudança de atuação da criminalidade.
+                                Fonte de informação:
+                            </p>
+                            <a href="http://www.ssp.sp.gov.br/acoes/leAcoes.aspx?id=33833">Fonte de informação</a>
+                        </div><!-- col end -->
+                    </div><!-- 1st row end-->
+
+                    <div class="gap-40"></div>
+
+                    <div class="call-to-action classic">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="call-to-action-text">
+                                    <h3 class="action-title">FAÇA AGORA SUA ADESÃO</h3>
+                                </div>
+                            </div><!-- Col end -->
+                            <div class="col-md-3">
+                                <div class="call-to-action-btn">
+                                    <a class="btn btn-primary" href="#">Adesão</a>
+                                </div>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                    </div><!-- Action end -->
+
+                </div><!-- Content inner end -->
+            </div><!-- Content Col end -->
+
+
+        </div><!-- Main row end -->
+    </div><!-- Conatiner end -->
+</section><!-- Main container end -->

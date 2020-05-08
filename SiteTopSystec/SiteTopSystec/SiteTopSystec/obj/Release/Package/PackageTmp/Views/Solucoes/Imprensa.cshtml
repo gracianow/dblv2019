@@ -1,0 +1,98 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewBag.Title = "Soluções para Bairros";
+}
+
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="sidebar sidebar-left">
+                    <div class="widget">
+                        <h3 class="widget-title">Soluções</h3>
+                        <ul class="nav nav-tabs nav-stacked service-menu">
+                            <li>
+                                @Html.ActionLink("Bairros", "VigilanciaSolidaria", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Vigilância Solidária", "VigilanciaSolidaria", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Projeto Detecta", "Detecta", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li  class="active">
+                                @Html.ActionLink("Imprensa", "Imprensa", "Solucoes", null, new { @class = "" })
+                            </li>
+                        </ul>
+                    </div><!-- Widget end -->
+
+                </div><!-- Sidebar end -->
+            </div><!-- Sidebar Col end -->
+
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="content-inner-page">
+
+                    <h2 class="column-title mrt-0">Nossas soluções, veículadas na imprensa</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Nossas soluções tem tido um reconhecimento dos usuários e cidadãos em sentido prático.
+                            </p>
+                           
+                        </div><!-- col end -->
+                    </div><!-- 1st row end-->
+                    @*<div class="gap-40"></div>*@
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div id="page-slider" class="owl-carousel owl-theme page-slider page-slider-small">
+                                <div class="item">
+                                    <a href="http://jundiagora.com.br/eloy-literalmente/" target="_blank">
+                                        <img src="~/Content/topsystec/imgs/topsystec/img_tps_330x165_logo_jornal1.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <br />
+                            <h3 class="column-title-small">Moradores do Eloy estão de olho – LITERALMENTE – nos criminosos</h3>
+                        </div>                        
+                        <div class="col-md-6">
+
+                            <div id="page-slider" class="owl-carousel owl-theme page-slider page-slider-small">
+                                <div class="item">
+                                    <a href="https://tribunadejundiai.com.br/cidades/jundiai/moradores-se-unem-e-instalam-sistema-de-monitoramento-em-bairro-do-vetor-oeste/" target="_blank">
+                                        <img src="~/Content/topsystec/imgs/topsystec/img_tps_330x165_logo_jornal2.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <br />
+                            <h3 class="column-title-small">Moradores se unem e instalam sistema de monitoramento em bairro do Vetor Oeste</h3>
+                        </div>
+                    </div><!--2nd row end -->
+
+                        <div class="gap-40"></div>
+
+                        <div class="call-to-action classic">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="call-to-action-text">
+                                        <h3 class="action-title">FAÇA AGORA SUA ADESÃO</h3>
+                                    </div>
+                                </div><!-- Col end -->
+                                <div class="col-md-3">
+                                    <div class="call-to-action-btn">
+                                        <a class="btn btn-primary" href="#">Adesão</a>
+                                    </div>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                        </div><!-- Action end -->
+
+                    </div><!-- Content inner end -->
+            </div><!-- Content Col end -->
+
+        </div><!-- Main row end -->
+    </div>
+    </div><!-- Conatiner end -->
+</section><!-- Main container end -->

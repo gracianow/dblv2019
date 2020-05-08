@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Cotação Seguro Auto";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<!--==========================
+      Services Section
+    ============================-->
+<section id="services">
+    <div class="container">
+
+        <header class="section-header wow fadeInUp">
+            <br />
+            <h3>
+                Seguro para o seu condomínio na medida certa, <br />
+                Ampla cobertura para atender seu condomínio.
+            </h3>
+        </header>
+
+        <div class="row">
+            <iframe src="@(string.Format("https://allprotection.corretagemfacil-app.com.br/online/new",Model.MgPath))" style="width:100%; height:100%; "></iframe>
+        </div>
+
+    </div>
+
+</section>

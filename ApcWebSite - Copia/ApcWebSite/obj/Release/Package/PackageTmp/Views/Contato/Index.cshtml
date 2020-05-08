@@ -1,0 +1,89 @@
+﻿@model ApcWebSite.Models.Contato
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!--==========================
+  Contact Section
+============================-->
+<section id="contact" class="section-bg wow fadeInUp">
+    <div class="container">
+
+        <div class="section-header">
+            <h3>Contato</h3>
+            <p>Este é o nosso canal de comunicação com você, Cliente!</p>
+        </div>
+
+        <div class="row contact-info">
+
+            <div class="col-md-4">
+                <div class="contact-address">
+                    <i class="ion-ios-location-outline"></i>
+                    <h3>Endereço</h3>
+                    <address>
+                        R. Elias Juvenal de Mello, 1400 Torre A 136 <br />
+                        Jundiaí - SP, CEP 13208-820 - Brasil <br>
+                    </address>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-phone">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <h3>Fone</h3>
+                    <p><a href="tel:+551139632253">+55 11 3963-2253</a></p>
+                    <br />
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-email">
+                    <i class="ion-ios-email-outline"></i>
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:cotacao@allprotectioncorretora.com.br">Cotação</a></p>
+                    <br />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form">
+            <div style="color:blue;">@ViewBag.Mensagem</div>
+            <div style="color:red;">@ViewBag.Error</div>
+            </div>
+            @*<form action="" method="post" role="form" class="contactForm">*@
+        <form method="post" enctype="multipart/form-data" style="width:600px" role="form" class="contactForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label></label>
+                    <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label></label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Por favor insira um e-maiil válido!" />
+                    <div class="validation"></div>
+                </div>
+            </div>
+            <div class="span4 form-group col-md-6">
+                @Html.LabelFor(model => model.TipoMensagem, new { @class = "col-md-6 control-label" })
+                <div class="">
+                    @Html.DropDownList("TipoMensagem", null, new { htmlAttributes = new { @name = "tipo", @class = "col-md-6 form-control", @placeholder = " Tipo de Mensagem" } })
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label></label>
+                <input type="text" class="form-control" name="assunto" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Por favor digite o assunto!" />
+                <div class="validation"></div>
+            </div>
+            <div class="form-group col-md-12">
+                <textarea class="form-control" name="mensagem" rows="5" data-rule="required" data-msg="Digite sua mensagem!" placeholder="Comentários"></textarea>
+                <div class="validation"></div>
+            </div>
+            <div class="text-center form-group col-md-12">
+                <button id="enviar" class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
+        </div>
+</section><!-- #contact -->
