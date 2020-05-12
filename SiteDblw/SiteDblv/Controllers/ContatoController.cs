@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using System.Configuration;
 using Newtonsoft.Json.Linq;
+using System.Net;
+using System.IO;
+using Newtonsoft.Json;
+
 
 namespace SiteDblv.Controllers
 {
@@ -33,7 +37,15 @@ namespace SiteDblv.Controllers
             ViewBag.Assunto = assunto;
 
             return View(model);
+        }
 
+        [HttpPost]
+        public JsonResult AjaxMethod(string response)
+        {
+            ReCaptcha recaptcha = new ReCaptcha();
+            string url = "https://www.google.com/recaptcha/api/siteverify?secret=" + recaptcha.Secret + "&response=" + response;
+            recaptcha.Response = (new WebClient()).DownloadString(url);
+            return Json(recaptcha);
         }
 
         public IEnumerable<SelectListItem> ListaTipoMensagem()
@@ -70,8 +82,8 @@ namespace SiteDblv.Controllers
             {
                 //tipo = ViewBag.TipoMensagem;
                 MailMessage correo = new MailMessage();
-                correo.From = new MailAddress("info@dobleweb.com.br");
-                correo.To.Add("info@dobleweb.com.br");
+                correo.From = new MailAddress("admin@dobleweb.com.br");
+                correo.To.Add("admin@dobleweb.com.br");
                 correo.Subject = "Site Dobleweb: " + assunto + " - " + nome;
                 correo.Body = "Nome: " + nome + "<br />" + "E-mail: " + email + "<br />" +
                     "Empresa: " + empresa + "<br />" + "Celular: " + celular + "<br />" + "Fone: " + foneFixo + "<br />" + "Tipo de Mensagem: " + tipo + "<br />" +
@@ -85,7 +97,7 @@ namespace SiteDblv.Controllers
                 smtp.Port = 587;
                 smtp.EnableSsl = false;
                 smtp.UseDefaultCredentials = true;
-                string conta = "info@dobleweb.com.br";
+                string conta = "admin@dobleweb.com.br";
                 string senha = "Wcj#10565";
                 smtp.Credentials = new System.Net.NetworkCredential(conta, senha);
 

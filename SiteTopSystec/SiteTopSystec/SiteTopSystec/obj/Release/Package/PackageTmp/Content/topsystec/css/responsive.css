@@ -2,6 +2,50 @@
 ================================================== */
 
 /* Large Devices, Wide Screens */
+@media (min-width : 1920px) {
+
+    .navbar-collapse {
+        padding-right: 0;
+    }
+
+    .nav-style-boxed .navbar-collapse {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width : 1680px) {
+
+    .navbar-collapse {
+        padding-right: 0;
+    }
+
+    .nav-style-boxed .navbar-collapse {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width : 1480px) {
+
+    .navbar-collapse {
+        padding-right: 0;
+    }
+
+    .nav-style-boxed .navbar-collapse {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width : 11366px) {
+
+    .navbar-collapse {
+        padding-right: 0;
+    }
+
+    .nav-style-boxed .navbar-collapse {
+        padding-left: 15px;
+    }
+}
+
 @media (min-width : 1200px) {
 
 	.navbar-collapse{
@@ -16,6 +60,231 @@
 
 
 /* Medium Devices, Desktops */
+
+@media (min-width: 992px) and (max-width:1920px) {
+
+    /* Header */
+
+    ul.navbar-nav > li {
+        padding: 0 6px;
+    }
+
+        ul.navbar-nav > li > a,
+        .dropdown-menu li a {
+            font-size: 12px;
+        }
+
+    /* Projects */
+
+    .project-item-title {
+        font-size: 18px;
+    }
+
+    /* Clients */
+
+    .clients-logo {
+        margin-bottom: 20px;
+    }
+
+    /* Subscribe */
+
+    .newsletter-form input {
+        min-width: 340px;
+    }
+
+    /* Action box */
+
+    .action-box-text {
+        font-size: 13px;
+    }
+
+    /* Footer */
+
+    .footer-social ul li {
+        margin: 0 3px 0 0;
+    }
+
+    .footer-menu {
+        float: none;
+    }
+
+    #back-to-top.affix {
+        bottom: 35px;
+    }
+
+    #back-to-top {
+        right: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1680px) {
+
+    /* Header */
+
+    ul.navbar-nav > li {
+        padding: 0 6px;
+    }
+
+        ul.navbar-nav > li > a,
+        .dropdown-menu li a {
+            font-size: 12px;
+        }
+
+    /* Projects */
+
+    .project-item-title {
+        font-size: 18px;
+    }
+
+    /* Clients */
+
+    .clients-logo {
+        margin-bottom: 20px;
+    }
+
+    /* Subscribe */
+
+    .newsletter-form input {
+        min-width: 340px;
+    }
+
+    /* Action box */
+
+    .action-box-text {
+        font-size: 13px;
+    }
+
+    /* Footer */
+
+    .footer-social ul li {
+        margin: 0 3px 0 0;
+    }
+
+    .footer-menu {
+        float: none;
+    }
+
+    #back-to-top.affix {
+        bottom: 35px;
+    }
+
+    #back-to-top {
+        right: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1480px) {
+
+    /* Header */
+
+    ul.navbar-nav > li {
+        padding: 0 6px;
+    }
+
+        ul.navbar-nav > li > a,
+        .dropdown-menu li a {
+            font-size: 12px;
+        }
+
+    /* Projects */
+
+    .project-item-title {
+        font-size: 18px;
+    }
+
+    /* Clients */
+
+    .clients-logo {
+        margin-bottom: 20px;
+    }
+
+    /* Subscribe */
+
+    .newsletter-form input {
+        min-width: 340px;
+    }
+
+    /* Action box */
+
+    .action-box-text {
+        font-size: 13px;
+    }
+
+    /* Footer */
+
+    .footer-social ul li {
+        margin: 0 3px 0 0;
+    }
+
+    .footer-menu {
+        float: none;
+    }
+
+    #back-to-top.affix {
+        bottom: 35px;
+    }
+
+    #back-to-top {
+        right: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1366px) {
+
+    /* Header */
+
+    ul.navbar-nav > li {
+        padding: 0 6px;
+    }
+
+        ul.navbar-nav > li > a,
+        .dropdown-menu li a {
+            font-size: 12px;
+        }
+
+    /* Projects */
+
+    .project-item-title {
+        font-size: 18px;
+    }
+
+    /* Clients */
+
+    .clients-logo {
+        margin-bottom: 20px;
+    }
+
+    /* Subscribe */
+
+    .newsletter-form input {
+        min-width: 340px;
+    }
+
+    /* Action box */
+
+    .action-box-text {
+        font-size: 13px;
+    }
+
+    /* Footer */
+
+    .footer-social ul li {
+        margin: 0 3px 0 0;
+    }
+
+    .footer-menu {
+        float: none;
+    }
+
+    #back-to-top.affix {
+        bottom: 35px;
+    }
+
+    #back-to-top {
+        right: 15px;
+    }
+}
+
 @media (min-width: 992px) and (max-width:1199px){
 
 	/* Header */

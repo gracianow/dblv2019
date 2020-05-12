@@ -103,7 +103,6 @@
                             <ul class="nav navbar-nav">
                                 <li class="dropdown">
                                     @Html.ActionLink("Início", "Index", "Home", null, new { @class = "dropdown-toggle" })
-
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -122,36 +121,29 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        Equipamentos<i class="fa fa-angle-down"></i>
-                                    </a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outras Soluções<i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li>
-                                            @Html.ActionLink("Informática", "Informatica", "Equipamento", null, new { @class = "" })
+                                            @Html.ActionLink("Equipamentos", "Index", "Equipamento", null, new { @class = "" })
                                         </li>
                                         <li>
-                                            @Html.ActionLink("Câmeras", "Cameras", "Equipamento", null, new { @class = "" })
-                                        </li>
-                                        <li>
-                                            @Html.ActionLink("Outros", "Outros", "Equipamento", null, new { @class = "" })
+                                            @Html.ActionLink("Serviços", "Index", "Equipamento", null, new { @class = "" })
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
                                     @Html.ActionLink("Representantes", "Index", "Representante", null, new { @class = "dropdown-toggle" })
-
                                 </li>
-                                <li>
-                                    @Html.ActionLink("Fale Conosco", "Index", "Contato", null, new { @class = "dropdown-toggle" })
-
-                                </li>
-                                <li>
-                                    @Html.ActionLink("Quem Somos", "Index", "QuemSomos", null, new { @class = "dropdown-toggle" })
-
-                                </li>
-                                <li class="header-get-a-quote">
-                                    @*<a class="btn btn-primary" href="#">  Orçamento  </a>*@
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quem Somos<i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            @Html.ActionLink("Quem Somos", "Index", "QuemSomos", null, new { @class = "" })
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("Fale Conosco", "Index", "Contato", null, new { @class = "dropdown-toggle" })
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                             <!--/ Nav ul end -->

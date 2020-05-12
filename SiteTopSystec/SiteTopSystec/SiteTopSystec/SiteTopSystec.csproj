@@ -460,7 +460,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -482,13 +484,14 @@
     <Content Include="Views\Shared\_Menu2.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
     <Content Include="Views\Bairros\Index.cshtml" />
-    <Content Include="Views\Solucoes\Condominio.cshtml" />
     <Content Include="Views\Equipamento\Cameras.cshtml" />
     <Content Include="Views\Representante\Index.cshtml" />
     <Content Include="Views\Contato\Index.cshtml" />
     <Content Include="Views\QuemSomos\Index.cshtml" />
     <Content Include="Views\Solucoes\Empresa3.cshtml" />
     <Content Include="Views\Solucoes\Imprensa.cshtml" />
+    <Content Include="Views\Solucoes\Condominio2.cshtml" />
+    <Content Include="Views\Solucoes\Equipamento.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

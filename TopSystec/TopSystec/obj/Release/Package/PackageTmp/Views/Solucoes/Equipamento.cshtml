@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "Equipamentos";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="sidebar sidebar-left">
+                    <div class="widget">
+                        <h3 class="widget-title">Equipamentos</h3>
+                        <ul class="nav nav-tabs nav-stacked service-menu">
+                            <li class="active">
+                                @Html.ActionLink("Equipamentos", "Equipamento", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Cabeamento e Fibra Óptica", "Cabeamento", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Piso Elevado", "PisoElevado", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Locação", "Locacao", "Solucoes", null, new { @class = "" })
+                            </li>
+                        </ul>
+                    </div><!-- Widget end -->
+                </div><!-- Sidebar end -->
+            </div><!-- Sidebar Col end -->
+
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="content-inner-page">
+
+                    <h2 class="column-title mrt-0">Equipamentos</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                <b>CÂMERAS:</b> Um sistema completo de CFTV ajudará os administradores e moradores a garantir uma segurança
+                                através do monitoramento constante de todas as entradas e saídas do local.
+                                Atualmente, a importância do sistema de câmeras de segurança tornou-se algo fundamental para os condomínios,
+                                sendo um dos equipamentos eletrônicos de segurança mais utilizados na proteção de condomínios.
+                                A TOPSYSTEC auxilia o condomínio para que possam ter mais segurança usando a tecnologia como aliada,
+                                oferecendo instalação e manutenção desta solução.<br />
+                                <b>Algumas das vantagens do CFTV:</b>
+                            </p>
+                            <ul class="list-arrow">
+                                <li>Visualiza, monitora e grava imagens de diversos ambientes ao mesmo tempo</li>
+                                <li>Inibe a ação de pessoas mal intencionadas</li>
+                                <li>Manutenção de baixo custo</li>
+                                <li>Acesso a imagens via internet</li>
+                            </ul><br />
+                            <p>
+                                <b>PABX IP: </b>A maioria dos condomínios utiliza o telefone para comunicar com os condôminos, gerando
+                                mensalmente contas altas de telefonia.
+                                A TOPSYSTEC oferece uma solução de PABX IP, onde as residências terão um ramal para a comunicação
+                                com a portaria, totalmente sem custo.<br />
+                                <b> Algumas das vantagens de PABX IP:</b>
+                            </p>
+                            <ul class="list-arrow">
+                                <li>Alta velocidade de instalação, atualização e manutenção</li>
+                                <li>Redução de custo da instalação</li>
+                                <li>Redução de custo de manutenção</li>
+                                <li>Redução considerável nos custos de telefonia</li>
+                            </ul>
+                        </div><!-- col end -->
+                    </div><!-- 1st row end-->
+
+                    <div class="gap-40"></div>
+
+                    <div id="page-slider" class="owl-carousel owl-theme page-slider page-slider-small">
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/projects/project1.jpg" alt="" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/projects/project2.jpg" alt="" />
+                        </div>
+                    </div><!-- Page slider end -->
+                    <div class="gap-40"></div>
+
+                    <div class="call-to-action classic">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="call-to-action-text">
+                                    <h3 class="action-title">Peça um orçamento personalizado.</h3>
+                                </div>
+                            </div><!-- Col end -->
+                            <div class="col-md-3">
+                                <div class="call-to-action-btn">
+                                    <a class="btn btn-primary" href="#">Orçamento</a>
+                                </div>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                    </div><!-- Action end -->
+
+                </div><!-- Content inner end -->
+            </div><!-- Content Col end -->
+
+
+        </div><!-- Main row end -->
+    </div><!-- Conatiner end -->
+</section><!-- Main container end -->

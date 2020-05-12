@@ -1,0 +1,99 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewBag.Title = "Soluções para Condomínios";
+}
+
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="sidebar sidebar-left">
+                    <div class="widget">
+                        <h3 class="widget-title">Soluções</h3>
+                        <ul class="nav nav-tabs nav-stacked service-menu">
+                            <li>
+                                @Html.ActionLink("Condomínios", "Condominio", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Automação residencial ", "Condominio2", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li class="active">
+                                @Html.ActionLink("Equipamentos para Controle de Acesso ", "Empresa3", "Solucoes", null, new { @class = "" })
+                            </li>
+                        </ul>
+                    </div><!-- Widget end -->
+                </div><!-- Sidebar end -->
+            </div><!-- Sidebar Col end -->
+
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="content-inner-page">
+
+                    <h2 class="column-title mrt-0">Soluções para seu Condomínio</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                <b>EQUIPAMENTOS PARA CONTROLE DE ACESSO: </b>
+                                A TOPSYSTEC é parceira comercial e técnica da empresa TRIX TECNOLOGIA, Empresa voltada para equipamentos de qualidade
+                                para controle de acesso.
+                            </p>
+                            <p>
+                                <b>CATRACAS: </b>
+                                As catracas TRIX apresentam mecanismos robustos e extremamente confiáveis, atendendo aos requisitos de segurança e qualidade que o mercado exige.
+                                Utiliza circuitos integrados do tipo CMOS para reduzir ao mínimo o consumo de energia e design atual que permite sua instalação em qualquer ambiente com excelente relação custo x benefício, usando como controle senha, cartão de proximidade ou biometria.
+                                A flexibilidade e variedade de recursos fazem das catracas TRIX uma excelente opção nas mais variadas aplicações em coleta de dados.
+                            </p>
+                            <p>
+                                <b>EQUIPAMENTOS DE BIOMETRIA: </b>
+                                Equipamentos de Biometria: Nossos equipamentos biométricos trabalham no modo 1:N ou 1:1. Sem limites de digitais, todas as verificações
+                                são realizadas em modo on-line direto num servidor.
+                                Possui dispositivo de detecção automática do dedo, ou seja, não é necessário pressionar nenhum tipo de tecla. Além disso,
+                                reconhece a impressão digital em 360 em catracas.
+                                Atende uma diversidade de aplicações desde pequenas até grandes empresas e condomínios. A tecnologia biométrica utilizada
+                                é projetada para suportar alto fluxo de pessoas com excelente desempenho, evitando filas e congestionamentos.
+                                Utiliza todo potencial dos processadores com tecnologia multicore (vários núcleos) para otimizar a identificação.
+                            </p>
+                        </div><!-- col end -->
+                    </div><!-- 1st row end-->
+
+                    <div class="gap-40"></div>
+
+                    <div id="page-slider" class="owl-carousel owl-theme page-slider page-slider-small">
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/topsystec//img_tps_550x330a.png" alt="" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/topsystec//img_tps_550x330i.png" alt="" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/topsystec//img_tps_550x330b.png" alt="" />
+                        </div>
+                    </div><!-- Page slider end -->
+
+                    <div class="gap-40"></div>
+
+                    <div class="call-to-action classic">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="call-to-action-text">
+                                    <h3 class="action-title">Peça um orçamento personalizado.</h3>
+                                </div>
+                            </div><!-- Col end -->
+                            <div class="col-md-3">
+                                <div class="call-to-action-btn">
+                                    <a class="btn btn-primary" href="#">Orçamento</a>
+                                </div>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                    </div><!-- Action end -->
+
+                </div><!-- Content inner end -->
+            </div><!-- Content Col end -->
+
+
+        </div><!-- Main row end -->
+    </div><!-- Conatiner end -->
+</section><!-- Main container end -->

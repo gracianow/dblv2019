@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Locacao";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="sidebar sidebar-left">
+                    <div class="widget">
+                        <h3 class="widget-title">Equipamentos</h3>
+                        <ul class="nav nav-tabs nav-stacked service-menu">
+                            <li>
+                                @Html.ActionLink("Equipamentos", "Equipamento", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Cabeamento e Fibra Óptica", "Cabeamento", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li class="active">
+                                @Html.ActionLink("Piso Elevado", "PisoElevado", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li>
+                                @Html.ActionLink("Locação", "Locacao", "Solucoes", null, new { @class = "" })
+                            </li>
+                        </ul>
+                    </div><!-- Widget end -->
+                </div><!-- Sidebar end -->
+            </div><!-- Sidebar Col end -->
+
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="content-inner-page">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Equipamentos de tecnologia evoluem muito rápido. Com o tempo, o melhor equipamento hoje torna-se obsoleto amanhã.
+                                Como toda ferramenta eletrônica, é necessária manutenção e suporte, demandando tempo e recursos para acionar o fabricante.
+                                A TOPSYSTEC oferece a solução de locação de equipamentos, que são equipamentos de CFTV, servidores, computadores, cancelas,
+                                catracas, equipamentos biométricos, dentre outros. O contrato de locação é oferecido por período de 24 a 60 meses.
+                                A TOPSYSTEC trabalha em parceria com a empresa alemã GRENKE, um dos maiores especialistas em financiamento em TI do mundo.
+                                Algumas das vantagens dessa solução são:<br />
+                            </p>
+                            <ul class="list-round">
+                                <li>Não será necessário imobilizar o capital para instalação da solução de TI. Ao evitar que um alto valor seja desembolsado para aquisição dos equipamentos, como servidor, firewall, cancelas, catracas, câmeras, etc., o montante pode ser utilizado como capital de giro para investimentos relacionados ao negócio da empresa;</li>
+                                <li>Na renovação do contrato de no mínimo 24 meses, a TOPSYSTEC poderá substituir alguns ou todos os equipamentos instalados, por outros mais atualizados, haja vista que os equipamentos anteriores estarão obsoleto em vista do tempo;</li>
+                                <li>Os equipamentos terão manutenção preventiva e/ou corretiva durante a vigência do contrato, sendo realizada mensal ou trimestral. Isso evita gastos adicionais com peças de reposição, manutenção dos equipamentos e dispensa uma equipe técnica para realização destas atividades. Na vigência do contrato, caso ocorra alguma falha grave, há a garantia da substituição das peças danificadas ou do equipamento por outro  equivalente ou superior. Também são disponibilizados técnicos para atendimento no local em casos de problemas com os equipamentos locados;</li>
+                                <li>Os equipamentos são dimensionados de acordo com as necessidades da empresa, assim não há o risco de compra de um equipamento inadequado;</li>
+                                <li>A TOPSYSTEC realizará a manutenção preventiva dos equipamentos, que inclui: reparos de hardware/software, substituição de peças e reforma dos equipamentos. Com isso, evita-se falhas procurando a sua prevenção, mantendo um controle contínuo sobre o equipamento;</li>
+                                <li>Suporte remoto quando for necessário para solução imediata de problemas.</li>
+                                <li>Atendimento diferenciando e especializado para clientes que usam esta solução.</li>
+                            </ul><br />
+                        </div><!-- col end -->
+                    </div><!-- 1st row end-->
+                    <div class="gap-40"></div>
+
+                    <div id="page-slider" class="owl-carousel owl-theme page-slider page-slider-small">
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/projects/project1.jpg" alt="" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/projects/project2.jpg" alt="" />
+                        </div>
+                    </div><!-- Page slider end -->
+
+                    <div class="gap-40"></div>
+
+                    <div class="call-to-action classic">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="call-to-action-text">
+                                    <h3 class="action-title">Peça um orçamento personalizado.</h3>
+                                </div>
+                            </div><!-- Col end -->
+                            <div class="col-md-3">
+                                <div class="call-to-action-btn">
+                                    <a class="btn btn-primary" href="#">Orçamento</a>
+                                </div>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                    </div><!-- Action end -->
+
+                </div><!-- Content inner end -->
+            </div><!-- Content Col end -->
+
+
+        </div><!-- Main row end -->
+    </div><!-- Conatiner end -->
+</section><!-- Main container end -->

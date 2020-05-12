@@ -11,19 +11,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="bin/ApcWebSite.dll">
-      <publishTime>05/08/2020 09:38:24</publishTime>
+      <publishTime>05/08/2020 13:12:13</publishTime>
     </File>
     <File Include="bin/ApcWebSite.pdb">
-      <publishTime>05/08/2020 09:38:24</publishTime>
+      <publishTime>05/08/2020 13:12:13</publishTime>
     </File>
     <File Include="bin/Dapper.dll">
-      <publishTime>05/04/2020 12:46:02</publishTime>
+      <publishTime>04/05/2020 12:46:02</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>11/16/2019 03:00:22</publishTime>
@@ -32,10 +32,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/16/2019 03:00:40</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/Microsoft.Win32.Primitives.dll">
       <publishTime>04/06/2020 06:45:10</publishTime>
@@ -44,7 +44,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/06/2020 06:45:10</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/System.AppContext.dll">
       <publishTime>04/06/2020 06:45:10</publishTime>
@@ -326,25 +326,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/06/2020 06:45:10</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="bin/System.Xml.ReaderWriter.dll">
       <publishTime>04/06/2020 06:45:10</publishTime>
@@ -365,7 +365,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/06/2020 06:45:10</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>01/04/2020 08:10:20</publishTime>
+      <publishTime>04/01/2020 08:10:20</publishTime>
     </File>
     <File Include="Content/bootstrap-grid.css">
       <publishTime>04/10/2020 09:03:18</publishTime>
@@ -809,7 +809,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2020 09:03:34</publishTime>
     </File>
     <File Include="Content/lib/bootstrap/js/bootstrap.min.js">
-      <publishTime>10/04/2020 09:03:35</publishTime>
+      <publishTime>04/10/2020 09:03:35</publishTime>
     </File>
     <File Include="Content/lib/bootstrap/js/bootstrap.min.js.map">
       <publishTime>04/10/2020 09:03:34</publishTime>
@@ -1007,28 +1007,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2020 09:03:16</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.eot">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.svg">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.ttf">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.woff">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.woff2">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="fonts/FontAwesome.otf">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/bootstrap.bundle.js">
       <publishTime>04/06/2020 10:45:16</publishTime>
@@ -1082,22 +1082,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/06/2020 10:45:14</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.js">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.min.js">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.min.map">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.slim.js">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.slim.min.js">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/jquery-3.4.1.slim.min.map">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>04/06/2020 10:45:58</publishTime>
@@ -1106,13 +1106,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/06/2020 10:45:58</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.js">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.8.3.js">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Scripts/popper-utils.js">
       <publishTime>04/06/2020 10:45:14</publishTime>
@@ -1358,16 +1358,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/06/2020 10:45:11</publishTime>
     </File>
     <File Include="Views/Auto/Auto.cshtml">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>05/08/2020 12:43:52</publishTime>
     </File>
     <File Include="Views/Auto/Index.cshtml">
-      <publishTime>05/08/2020 06:53:38</publishTime>
+      <publishTime>05/08/2020 12:50:38</publishTime>
     </File>
     <File Include="Views/Condominio/Condominio.cshtml">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>05/08/2020 12:43:52</publishTime>
     </File>
     <File Include="Views/Condominio/Index.cshtml">
-      <publishTime>04/10/2020 09:03:59</publishTime>
+      <publishTime>05/08/2020 12:43:52</publishTime>
     </File>
     <File Include="Views/Contato/EnviarEmail.cshtml">
       <publishTime>04/10/2020 09:04:00</publishTime>
@@ -1379,7 +1379,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/06/2020 14:28:03</publishTime>
     </File>
     <File Include="Views/Cotacao/Cotacao.cshtml">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Views/Cotacao/Index.cshtml">
       <publishTime>05/08/2020 09:35:29</publishTime>
@@ -1388,10 +1388,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2020 09:04:00</publishTime>
     </File>
     <File Include="Views/Empresarial/Empresarial.cshtml">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>05/08/2020 12:43:52</publishTime>
     </File>
     <File Include="Views/Empresarial/Index.cshtml">
-      <publishTime>05/08/2020 06:53:38</publishTime>
+      <publishTime>05/08/2020 12:50:19</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>04/10/2020 09:04:00</publishTime>
@@ -1400,16 +1400,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2020 09:04:00</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Views/Inicio/Index.cshtml">
       <publishTime>05/07/2020 07:47:28</publishTime>
     </File>
     <File Include="Views/QuemSomos/Index.cshtml">
-      <publishTime>05/08/2020 06:53:38</publishTime>
+      <publishTime>05/08/2020 12:50:19</publishTime>
     </File>
     <File Include="Views/QuemSomos/QuemSomos.cshtml">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>04/10/2020 09:04:01</publishTime>
@@ -1424,31 +1424,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/07/2020 12:54:13</publishTime>
     </File>
     <File Include="Views/Shared/_Layout2.cshtml">
-      <publishTime>05/08/2020 08:20:06</publishTime>
+      <publishTime>05/08/2020 13:09:49</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutInicio.cshtml">
       <publishTime>05/07/2020 12:54:12</publishTime>
     </File>
     <File Include="Views/Shared/_Menu.cshtml">
-      <publishTime>04/30/2020 13:35:06</publishTime>
+      <publishTime>05/08/2020 12:53:26</publishTime>
     </File>
     <File Include="Views/Shared/_Menu2.cshtml">
-      <publishTime>04/28/2020 17:40:17</publishTime>
+      <publishTime>05/08/2020 12:53:12</publishTime>
     </File>
     <File Include="Views/Shared/_MenuInicio.cshtml">
       <publishTime>04/30/2020 13:35:53</publishTime>
     </File>
     <File Include="Views/Transporte/Index.cshtml">
-      <publishTime>05/08/2020 06:53:38</publishTime>
+      <publishTime>05/08/2020 12:50:19</publishTime>
     </File>
     <File Include="Views/Transporte/Transporte.cshtml">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>05/08/2020 12:43:53</publishTime>
     </File>
     <File Include="Views/Vida/Index.cshtml">
-      <publishTime>05/08/2020 06:53:38</publishTime>
+      <publishTime>05/08/2020 12:50:19</publishTime>
     </File>
     <File Include="Views/Vida/Vida.cshtml">
-      <publishTime>01/04/2020 08:10:19</publishTime>
+      <publishTime>05/08/2020 12:43:53</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>04/27/2020 12:17:21</publishTime>

@@ -196,6 +196,7 @@ D:\git\dblv2019_old20190806\SiteDblv\SiteDblv\obj\Debug\SiteDblv.csproj.CoreComp
 D:\git\dblv2019_old20190806\SiteDblv\SiteDblv\obj\Debug\SiteDblv.csproj.CopyComplete
 D:\git\dblv2019_old20190806\SiteDblv\SiteDblv\obj\Debug\SiteDblv.dll
 D:\git\dblv2019_old20190806\SiteDblv\SiteDblv\obj\Debug\SiteDblv.pdb
+C:\git\dblv2019\SiteDblw\SiteDblv\obj\Debug\SiteDblv.csproj.CoreCompileInputs.cache
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\SiteDblv.dll.config
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\SiteDblv.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\SiteDblv.pdb
@@ -260,8 +261,12 @@ C:\git\dblv2019\SiteDblw\SiteDblv\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\Microsoft.Web.Infrastructure.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\Newtonsoft.Json.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Buffers.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Diagnostics.DiagnosticSource.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Memory.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Net.Http.Formatting.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Numerics.Vectors.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Runtime.CompilerServices.Unsafe.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Web.Helpers.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Web.Http.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Web.Http.WebHost.dll
@@ -278,8 +283,12 @@ C:\git\dblv2019\SiteDblw\SiteDblv\bin\EntityFramework.SqlServer.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\Newtonsoft.Json.xml
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Buffers.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Diagnostics.DiagnosticSource.xml
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Memory.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Net.Http.Formatting.xml
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Numerics.Vectors.xml
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Web.Helpers.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Web.Http.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Web.Http.WebHost.xml
@@ -290,8 +299,6 @@ C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Web.WebPages.Deployment.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Web.WebPages.Razor.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Web.Optimization.xml
 C:\git\dblv2019\SiteDblw\SiteDblv\bin\Antlr3.Runtime.pdb
-C:\git\dblv2019\SiteDblw\SiteDblv\obj\Debug\SiteDblv.csprojAssemblyReference.cache
-C:\git\dblv2019\SiteDblw\SiteDblv\obj\Debug\SiteDblv.csproj.CoreCompileInputs.cache
 C:\git\dblv2019\SiteDblw\SiteDblv\obj\Debug\SiteDblv.csproj.CopyComplete
 C:\git\dblv2019\SiteDblw\SiteDblv\obj\Debug\SiteDblv.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\obj\Debug\SiteDblv.pdb

@@ -1,0 +1,89 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewBag.Title = "Soluções para Empresas";
+}
+
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="sidebar sidebar-left">
+                    <div class="widget">
+                        <h3 class="widget-title">Soluções</h3>
+                        <ul class="nav nav-tabs nav-stacked service-menu">
+                            <li>
+                                @Html.ActionLink("Consultoria", "Empresa", "Solucoes", null, new { @class = "" })
+                            </li>
+                            <li class="active">
+                                @Html.ActionLink("Suporte", "Empresa2", "Solucoes", null, new { @class = "" })
+                            </li>
+                        </ul>
+                    </div><!-- Widget end -->
+                </div><!-- Sidebar end -->
+            </div><!-- Sidebar Col end -->
+
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="content-inner-page">
+
+                    <h2 class="column-title mrt-0">Soluções para sua empresa</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                <b>SUPORTE A SERVIDORES E COMPUTADORES:</b> A manutenção física de um servidor ou de um computador é
+                                tão importante quanto a manutenção do sistema para garantir o bom desempenho da máquina.
+                                Manter estes equipamentos ligados ou desligados por um longo período pode prejudicar o funcionamento
+                                dos equipamentos.
+                                A TOPSYSTEC possui profissionais com experiência em servidores e estações, que garantirão a
+                                operacionalidade de ferramenta essencial em uma empresa ou residência.
+                            </p>
+                            <ul class="list-arrow">
+                                <li>Teamviewer</li>
+                                <li>Showmypc</li>
+                                <li>Logmein</li>
+                                <li>Ammyy</li>
+                                <li>Ultravnc</li>
+                                <li>Anydesk</li>
+                            </ul>
+                        </div><!-- col end -->
+                    </div><!-- 1st row end-->
+                    <div class="gap-40"></div>
+
+                    <div id="page-slider" class="owl-carousel owl-theme page-slider page-slider-small">
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/topsystec//img_tps_550x330o.png" alt="" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/topsystec//img_tps_550x330q.png" alt="" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/topsystec/images/topsystec//img_tps_550x330t.png" alt="" />
+                        </div>
+                    </div><!-- Page slider end -->
+                    <div class="gap-40"></div>
+
+                    <div class="call-to-action classic">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="call-to-action-text">
+                                    <h3 class="action-title">Peça um orçamento personalizado.</h3>
+                                </div>
+                            </div><!-- Col end -->
+                            <div class="col-md-3">
+                                <div class="call-to-action-btn">
+                                    <a class="btn btn-primary" href="#">Orçamento</a>
+                                </div>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                    </div><!-- Action end -->
+
+                </div><!-- Content inner end -->
+            </div><!-- Content Col end -->
+
+
+        </div><!-- Main row end -->
+    </div><!-- Conatiner end -->
+</section><!-- Main container end -->
