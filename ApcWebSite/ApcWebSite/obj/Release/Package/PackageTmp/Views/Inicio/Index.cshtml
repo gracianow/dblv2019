@@ -32,8 +32,7 @@
                                         Proteja seu Automóvel dos riscos e tenha mais segurança <br />
                                         para o seu dia a dia com um valor que cabe no bolso!
                                     </p>
-                                        @Html.ActionLink("Saiba mais ...", "Index", "Auto",
-                                       null, new { @class = "btn-get-started scrollto" })
+                                    @Html.ActionLink("Saiba mais ...", "Index", "Auto", null, new { @class = "btn-get-started scrollto" })
                                 </div>
                             </div>
                         </div>
@@ -108,42 +107,51 @@
         </div>
     </div>
 </section><!-- #intro -->
-
-    <!--==========================
-      Featured Services Section
-    ============================-->
-    <section id="featured-services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 box" style="width:100% !important;">
-                    <img src="~/Content/img/apc/logos/apc_img_mini_150x77a.png" />&nbsp;
-                    <a href="https://allprotection.corretagemfacil-app.com.br/online/new" class="btn-get-started scrollto" target="_blank">Calcule agora!</a>
-                    @*@Html.ActionLink("Calcule agora!", "Index", "Condominio", null, new { @class = "btn-get-started scrollto" })*@
-                    <h4 class="title"><b>Seguro Auto</b></h4>
-                    <p class="description">
-                        Seu veículo precisa de coberturas específicas? Temos as melhores opções...
-                    </p>
-                </div>
-
-                <div class="col-lg-4 box" style="width:100% !important;">
-                    <img src="~/Content/img/apc/logos/apc_img_mini_150x77c.png" />&nbsp;
-                    <a href="https://allprotection.corretagemfacil-app.com.br/residencial/new" class="btn-get-started scrollto" target="_blank">Calcule agora!</a>
-                    @*@Html.ActionLink("Calcule agora!", "Index", "Condominio", null, new { @class = "btn-get-started scrollto" })*@
-                    <h4 class="title"><b>Seguro Residencial</b></h4>
-                    <p class="description">
-                        Seu lar e sua família merecem...
-                    </p>
-                </div>
-
-                <div class="col-lg-4 box" style="width:100% !important;">
-                    <img src="~/Content/img/apc/logos/apc_img_mini_150x77d.png" />&nbsp;
-                    @Html.ActionLink("Peça sua Cotação", "Index", "Cotacao", null, new { @class = "btn-get-started scrollto" })
-                    <h4 class="title"><b>Seguro Condomínio</b></h4>
-                    <p class="description">
-                        No Seguro Condominio, proteção abrangente...
-                    </p>
-                </div>
-
-                </div>
+<!--==========================
+  Featured Services Section
+============================-->
+<section id="featured-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 box" style="width:100% !important;">
+                <img src="~/Content/img/apc/logos/apc_img_mini_150x77a.png" />&nbsp;
+                <a href="https://allprotection.aggilizador.com.br/auto" class="btn-get-started scrollto" target="_blank">Peça sua Cotação!</a>
+                @*@Html.ActionLink("Calcule agora!", "Index", "Condominio", null, new { @class = "btn-get-started scrollto" })*@
+                <h4 class="title"><b>Seguro Auto</b></h4>
+                <p class="description">
+                    Seu veículo precisa de coberturas específicas? Temos as melhores opções...
+                </p>
             </div>
-    </section><!-- #featured-services -->
+
+            <div class="col-lg-4 box" style="width:100% !important;">
+                <img src="~/Content/img/apc/logos/apc_img_mini_150x77c.png" />&nbsp;
+                <a href="https://allprotection.aggilizador.com.br/residence" class="btn-get-started scrollto" target="_blank">Peça sua Cotação!</a>
+                @*@Html.ActionLink("Calcule agora!", "Index", "Condominio", null, new { @class = "btn-get-started scrollto" })*@
+                <h4 class="title"><b>Seguro Residencial</b></h4>
+                <p class="description">
+                    Seu lar e sua família merecem...
+                </p>
+            </div>
+
+            <div class="col-lg-4 box" style="width:100% !important;">
+                <img src="~/Content/img/apc/logos/apc_img_mini_150x77d.png" />&nbsp;
+                @*@Html.ActionLink("Peça sua Cotação", "Index", "Cotacao", null, new { @class = "btn-get-started scrollto" })*@
+                <a href="https://allprotection.aggilizador.com.br/condominium" class="btn-get-started scrollto" target="_blank">Peça sua Cotação!</a>
+                <h4 class="title"><b>Seguro Condomínio</b></h4>
+                <p class="description">
+                    No Seguro Condominio, proteção abrangente...
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section><!-- #featured-services -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165287107-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165287107-2');
+</script>

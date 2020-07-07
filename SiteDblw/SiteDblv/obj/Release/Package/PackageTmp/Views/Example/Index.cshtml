@@ -1,0 +1,47 @@
+﻿@* namespaces needed to access BotDetect members *@
+@using BotDetect.Web.Mvc;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BotDetect ASP.NET CAPTCHA Validation: Basic ASP.NET MVC CAPTCHA Code Example</title>
+    <link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl"
+          rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Style/Sheet.css")" rel="stylesheet"
+          type="text/css" />
+</head>
+<body>
+    <div class="column">
+        <h1>
+            BotDetect ASP.NET CAPTCHA Validation:
+            <br /> Basic ASP.NET MVC CAPTCHA Code Example
+        </h1>
+        @using (Html.BeginForm())
+        {
+            <fieldset>
+                <legend>ASP.NET MVC CAPTCHA Validation</legend>
+                <div>
+                    @Html.Label("CaptchaCode", "Retype the code from the picture: ")
+                    @{ MvcCaptcha exampleCaptcha = new MvcCaptcha("ExampleCaptcha");
+                        exampleCaptcha.UserInputID = "CaptchaCode";}
+                    @Html.Captcha(exampleCaptcha)
+                </div>
+                <div class="actions">
+                    @Html.TextBox("CaptchaCode")
+                    <input type="submit" value="Validate" />
+                    @Html.ValidationMessage("CaptchaCode")
+                    @if ((Request.HttpMethod == "POST")
+                    && ViewData.ModelState.IsValid)
+                    {
+                        <span class="correct">Correct!</span>
+                    }
+                </div>
+            </fieldset>
+        }
+    </div>
+</body>
+</html>

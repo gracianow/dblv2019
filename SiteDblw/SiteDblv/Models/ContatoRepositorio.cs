@@ -15,28 +15,28 @@ namespace SiteDblv.Models
             this._context = ContatoContext;
         }
 
-        public IEnumerable<Contato> GetContatos()
+        public IEnumerable<ContatoViewModel> GetContatos()
         {
             return _context.Contatos.ToList();
         }
 
-        public Contato GetContatoPorID(int id)
+        public ContatoViewModel GetContatoPorID(int id)
         {
             return _context.Contatos.Find(id);
         }
 
-        public void InserirContato(Contato contato)
+        public void InserirContato(ContatoViewModel contato)
         {
             _context.Contatos.Add(contato);
         }
 
         public void DeletarContato(int contatoID)
         {
-            Contato Contato = _context.Contatos.Find(contatoID);
+            ContatoViewModel Contato = _context.Contatos.Find(contatoID);
             _context.Contatos.Remove(Contato);
         }
 
-        public void AtualizaContato(Contato Contato)
+        public void AtualizaContato(ContatoViewModel Contato)
         {
             _context.Entry(Contato).State = EntityState.Modified;
         }

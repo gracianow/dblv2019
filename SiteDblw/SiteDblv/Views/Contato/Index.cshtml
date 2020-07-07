@@ -1,6 +1,5 @@
 ﻿
-@model SiteDblv.Models.Contato
-@*@model SiteDblv.Models.ReCaptcha*@
+@model SiteDblv.Models.ContatoViewModel
 
 @{
     ViewBag.Title = "Contato";
@@ -13,19 +12,17 @@
 
 <script type="text/javascript">$("#txtCelular").mask("(00) 00000-0009");</script>
 
-@section Scripts
-{
-    <script src="https://www.google.com/recaptcha/api.js?render=your site key"></script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+@section scripts{
     <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LclcfEUAAAAABl6kl_OyXt8Q_InGoCpw3VoMmDt', { action: 'index' }).then(function (token) {
-                document.getElementById("foo").value = token;
-            });
+        $(document).ready(function () {
+            $('#modalMsg').modal('show');
         });
+
     </script>
 }
-
-
 
 <!-- Subhead
 ================================================== -->
@@ -65,12 +62,6 @@
                                     info@dobleweb.com.br
                                 </p>
                             </li>
-                            @*<li>
-                                    <label><strong>Endereço: </strong></label>
-                                    <p>
-                                        Rua Itirapina, 690
-                                    </p>
-                                </li>*@
                         </ul>
                     </div>
                     <div class="widget">
@@ -84,43 +75,46 @@
                     </div>
                 </aside>
             </div>
-            <div class="span8">
-                <form method="post" enctype="multipart/form-data" role="form" class="contactForm">
-                    <div class="form-row">
+            @using reCAPTCHA.MVC
+            @using (Html.BeginForm("Index", "Contato", FormMethod.Post, new { @class = "contactForm" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="span8">
+                    <div class="form-row contactForm">
                         <div class="form-group span4 text-left">
-                            <h4><strong>Contato</strong></h4><br />
+                            <h4><strong>Contato</strong></h4>
+                        </div>
+                        <div class="form-group span3" style="text-align:right !important;">
                             <h5 style="color:blue;">@TempData["EnviarMsg"]</h5>
                             <h5 style="color:red;">@TempData["ErroMsg"]</h5>
                         </div>
-                        <div class="form-group span3" style="text-align:right !important;">
-
-                        </div>
                     </div>
-                    <div class="form-row text-center">
+                    <div class="form-row text-left">
                         <div class="form-group span8">
-                            <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" required />
+                            <input type="text" name="nome" id="nome" placeholder="Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" required style="background: #f5f5f5 !important;" />
                             <div class="validation"></div>
                         </div>
                     </div>
-                    <div class="form-row text-center">
+                    <div class="form-row text-left">
                         <div class="form-group span8">
-                            <input type="text" name="empresa" class="form-control" id="empresa" placeholder="Empresa" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" />
+                            <input type="text" name="empresa" id="empresa" placeholder="Empresa" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" style="background: #f5f5f5 !important;" />
                             <div class="validation"></div>
                         </div>
                     </div>
-                    <div class="form-row text-center">
+                    <div class="form-row text-left">
                         <div class="form-group span8">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail"
-                                   data-rule="email" data-msg="Por favor insira um e-maiil válido!" required />
+                            <input type="email" name="email" id="email" placeholder="E-mail"
+                                   data-rule="email" data-msg="Por favor insira um e-maiil válido!" required style="background: #f5f5f5 !important;" />
                             <div class="validation"></div>
                         </div>
                     </div>
-                    <div class="form-row text-center">
+                    <div class="form-row text-left">
                         <div class="form-group span4">
                             <label>&nbsp;</label>
                             <input type="tel" name="celular" id="txtCelular" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4,4}"
                                    class="form-control" placeholder="Celular" data-rule="minlen:11"
-                                   data-msg="Digite pelo menos 11 caracteres!" required />
+                                   data-msg="Digite pelo menos 11 caracteres!" required style="background: #f5f5f5 !important;" />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group span3">
@@ -140,12 +134,12 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-row text-center">
+                    <div class="form-row text-left">
                         <div class="form-group span4">
                             <label>&nbsp;</label>
                             <input type="tel" name="foneFixo" id="txtFoneFixo" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}"
                                    class="form-control" placeholder="Fone Fixo" data-rule="minlen:10"
-                                   data-msg="Digite pelo menos 10 caracteres!" />
+                                   data-msg="Digite pelo menos 10 caracteres!" style="background: #f5f5f5 !important;" />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group span3">
@@ -158,91 +152,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-row text-center">
+                    <div class="form-row text-left">
                         <div class="form-group span8">
                             <textarea class="form-control" name="mensagem" rows="5" data-rule="required"
-                                      data-msg="Digite sua mensagem!" placeholder="Comentários" required></textarea>
+                                      data-msg="Digite sua mensagem!" placeholder="Comentários" required style="background: #f5f5f5 !important;"></textarea>
                             <div class="validation"></div>
                         </div>
                     </div>
                     <div class="form-row text-center">
                         <div class="form-group span8">
 
-                            <input type="hidden" id="foo" name="foo" />
-
-                            <div id="dvCaptcha">
-                            </div>
-                            <input type="hidden" id="hfCaptcha" />
-                            <span id="rfvCaptcha" class="error" style="display:none">Captcha validation is required.</span>
+                            @Html.Recaptcha()
+                            <br />
+                            <strong>@Html.ValidationSummary()</strong>
                             <br />
 
-                            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-                            <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" asyncdefer></script>
-                            <script type="text/javascript">
-                            var onloadCallback = function () {
-                                grecaptcha.render('dvCaptcha', {
-                                    'sitekey': '@Model.Key',
-                                    'callback': function (response) {
-                                        $.ajax({
-                                            type: "POST",
-                                            url: "/Home/AjaxMethod",
-                                            data: "{response: '" + response + "'}",
-                                            contentType: "application/json; charset=utf-8",
-                                            dataType: "json",
-                                            success: function (r) {
-                                                var captchaResponse = jQuery.parseJSON(r.Response);
-                                                if (captchaResponse.success) {
-                                                    $("#hfCaptcha").val(captchaResponse.success);
-                                                    $("#rfvCaptcha").hide();
-                                                } else {
-                                                    $("#hfCaptcha").val("");
-                                                    $("#rfvCaptcha").show();
-                                                    var error = captchaResponse["error-codes"][0];
-                                                    $("#rfvCaptcha").html("RECaptcha error. " + error);
-                                                }
-                                            }
-                                        });
-                                    }
-                                });
-                            };
-                            $(function () {
-                                $("#btnSubmit").click(function () {
-                                    $("#rfvCaptcha").hide();
-                                    if ($("#hfCaptcha").val() == "") {
-                                        $("#rfvCaptcha").show();
-                                    }
-                                });
-                            });
-                            </script>
+                            <button id="enviar" class="btn btn-color btn-rounded" type="submit" data-toggle="modal" data-target="#modalMessage">Enviar</button>
 
-                            <button id="enviar" class="btn btn-color btn-rounded" type="submit">Enviar</button>
-                            @*<button id="enviar" class="btn btn-color btn-rounded" type="submit" data-toggle="modal" data-target="#modalMessage">Enviar</button>*@
                         </div>
-                        @*<div class="g-recaptcha" data-sitekey="6LclcfEUAAAAABl6kl_OyXt8Q_InGoCpw3VoMmDt"></div>*@
                     </div>
-                </form>
-            </div>
-            <!-- Modal -->
-            @*@if (TempData["mailMsg"] != null)
-                {
-                    Html.RenderPartial("_ModalEnviarEmail", TempData["mailMsg"]);
-                }*@
-
-            <!-- end modal-->
+                </div>
+            }
         </div>
+        <!-- Modal -->
+        @if (TempData["mailMsg"] != null)
+        {
+            Html.RenderPartial("_ModalEnviarEmail", TempData["mailMsg"]);
+        }
+        <!-- end modal-->
     </div>
 </section>
 
-@*<script src='https://www.google.com/recaptcha/api.js'></script>*@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-@Scripts.Render("https://www.googletagmanager.com/gtag/js?id=UA-2867053-3")
-@*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2867053-3"></script>*@
-<script type="text/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168327991-1"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-2867053-3');
+    gtag('config', 'UA-168327991-1');
 </script>
 

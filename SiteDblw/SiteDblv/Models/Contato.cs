@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace SiteDblv.Models
 {
     [Table("Contato")]
-    public class Contato
+    public class ContatoViewModel
     {
         [Key]
         [Column("contato_id")]

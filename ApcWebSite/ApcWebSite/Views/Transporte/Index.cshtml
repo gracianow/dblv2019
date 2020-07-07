@@ -50,10 +50,18 @@
             </div>*@
 
         <div class="col-md-12" style="text-align:center !important;">
-                @Html.ActionLink("Peça sua cotação!", "Index", "Cotacao", 
-                null, new { @class = "btn btn-primary active" })
+            @Html.ActionLink("Peça sua cotação!", "Index", "Cotacao", null, new { @class = "btn btn-primary active" })
         </div>
         <br />
     </div>
 </section>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165287107-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165287107-2');
+</script>

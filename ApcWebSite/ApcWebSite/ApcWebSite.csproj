@@ -378,6 +378,7 @@
     <Content Include="Content\lib\bootstrap\js\bootstrap.js.map" />
     <Content Include="Content\lib\bootstrap\js\bootstrap.min.js.map" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -479,6 +480,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="sitemap.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -494,7 +496,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Menu.cshtml" />
-    <Content Include="Views\Auto\Auto.cshtml" />
     <Content Include="Views\Contato\Index.cshtml" />
     <Content Include="Views\Contato\EnviarEmail.cshtml" />
     <Content Include="Views\Shared\_Menu2.cshtml" />
@@ -503,12 +504,6 @@
     <Content Include="Views\Shared\_Footer2.cshtml" />
     <Content Include="Views\Inicio\Index.cshtml" />
     <Content Include="Views\Shared\_MenuInicio.cshtml" />
-    <Content Include="Views\Empresarial\Empresarial.cshtml" />
-    <Content Include="Views\Condominio\Condominio.cshtml" />
-    <Content Include="Views\QuemSomos\QuemSomos.cshtml" />
-    <Content Include="Views\Transporte\Transporte.cshtml" />
-    <Content Include="Views\Vida\Vida.cshtml" />
-    <Content Include="Views\Cotacao\Cotacao.cshtml" />
     <Content Include="Views\Cotacao\_ModalEnviarEmail.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -524,7 +519,6 @@
     <Content Include="Views\Condominio\Index.cshtml" />
     <Content Include="Views\Cotacao\Index.cshtml" />
     <Content Include="Views\Empresarial\Index.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\QuemSomos\Index.cshtml" />
     <Content Include="Views\Transporte\Index.cshtml" />
     <Content Include="Views\Vida\Index.cshtml" />

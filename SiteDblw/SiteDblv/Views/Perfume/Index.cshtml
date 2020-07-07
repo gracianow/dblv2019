@@ -9,6 +9,8 @@
 
 <script type="text/javascript">$("#txtCelular").mask("(00) 00000-0009");</script>
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 @section scripts{
     <script>
         $(document).ready(function () {
@@ -541,46 +543,56 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-8">
-                    <form action="" method="post" role="form" class="contactForm">
+                    @using reCAPTCHA.MVC
+                    @using (Html.BeginForm("Index", "Contato", FormMethod.Post, new { @class = "contactForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <form action="" method="post" role="form" class="contactForm">
 
-                        <div class="col-md-12 col-sm-12 contact-form pad-form">
-                            <div class="form-group label-floating is-empty">
-                                <input type="text" name="nome" class="form-control" id="txtNome" placeholder="Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" required />
-                                <div class="validation"></div>
+                            <div class="col-md-12 col-sm-12 contact-form pad-form">
+                                <div class="form-group label-floating is-empty">
+                                    <input type="text" name="nome" class="form-control" id="txtNome" placeholder="Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres!" required />
+                                    <div class="validation"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 contact-form">
-                            <div class="form-group">
-                                <input type="tel" class="form-control label-floating is-empty" name="celular" id="txtCelular" placeholder="Celular" data-rule="required" data-msg="Este campo é obrigatório!" required />
-                                <div class="validation"></div>
+                            <div class="col-md-6 col-sm-6 contact-form">
+                                <div class="form-group">
+                                    <input type="tel" class="form-control label-floating is-empty" name="celular" id="txtCelular" placeholder="Celular" data-rule="required" data-msg="Este campo é obrigatório!" required />
+                                    <div class="validation"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 contact-form pad-form">
-                            <div class="form-group">
-                                <input type="email" class="form-control label-floating is-empty" name="email" id="txtEmail" placeholder="E-mail" data-rule="email" data-msg="Digite um e-mail válido!" required />
-                                <div class="validation"></div>
+                            <div class="col-md-6 col-sm-6 contact-form pad-form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control label-floating is-empty" name="email" id="txtEmail" placeholder="E-mail" data-rule="email" data-msg="Digite um e-mail válido!" required />
+                                    <div class="validation"></div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-12 contact-form pad-form">
-                            <div class="form-group label-floating is-empty">
-                                <input type="text" id="txtAssunto" class="form-control" name="assunto" required data-msg="Digite um assunto" placeholder="Assunto" />
-                                <div class="validation"></div>
+                            <div class="col-md-12 contact-form pad-form">
+                                <div class="form-group label-floating is-empty">
+                                    <input type="text" id="txtAssunto" class="form-control" name="assunto" required data-msg="Digite um assunto" placeholder="Assunto" />
+                                    <div class="validation"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12 contact-form">
-                            <div class="form-group label-floating is-empty">
-                                <textarea id="taMensagem" class="form-control" name="mensagem" rows="5" required data-msg="Seu comentários e pedidos" placeholder="Mensagem"></textarea>
-                                <div class="validation"></div>
+                            <div class="col-md-12 contact-form">
+                                <div class="form-group label-floating is-empty">
+                                    <textarea id="taMensagem" class="form-control" name="mensagem" rows="5" required data-msg="Seu comentários e pedidos" placeholder="Mensagem"></textarea>
+                                    <div class="validation"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12 btnpad">
-                            <div class="contacts-btn-pad">
-                                <button id="btEnviar" class="contacts-btn text-white" type="submit" data-toggle="modal" data-target="#modalMessage">Enviar</button>
+                            <div class="col-md-12 btnpad">
+                                <div class="contacts-btn-pad">
+
+                                    @Html.Recaptcha()
+                                    <br />
+                                    <strong>@Html.ValidationSummary()</strong>
+                                    <br />
+                                    <button id="btEnviar" class="contacts-btn text-white" type="submit" data-toggle="modal" data-target="#modalMessage">Enviar</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
+                        </form>
+                    }
+                    </div>
                 <!-- Modal -->
                 @if (TempData["mailMsg"] != null)
                 {

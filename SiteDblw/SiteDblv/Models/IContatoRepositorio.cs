@@ -8,11 +8,11 @@ namespace SiteDblv.Models
 {
     interface IContatoRepositorio : IDisposable
     {
-        IEnumerable<Contato> GetContatos();
-        Contato GetContatoPorID(int ContatoId);
-        void InserirContato(Contato contato);
+        IEnumerable<ContatoViewModel> GetContatos();
+        ContatoViewModel GetContatoPorID(int ContatoId);
+        void InserirContato(ContatoViewModel contato);
         void DeletarContato(int contatoId);
-        void AtualizaContato(Contato contato);
+        void AtualizaContato(ContatoViewModel contato);
         void Salvar();
     }
 }

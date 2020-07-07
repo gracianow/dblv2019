@@ -7,9 +7,11 @@ namespace SiteDblv.Models
 {
     public class ReCaptcha
     {
-        public string Key = "6LclcfEUAAAAABl6kl_OyXt8Q_InGoCpw3VoMmDt";
+        public string Key = "6Le7q_cUAAAAAGPs9VkOZ3SmHbXzewColP7XHlvx";
 
-        public string Secret = "6LclcfEUAAAAAMGH3d5JU6zSxaP2r7jMfrG98-tK";
+        public string Secret = "6Le7q_cUAAAAAJKhDyrUOkjzyvZ0jraFNQIj70bo";
+
         public string Response { get; set; }
+
     }
 }

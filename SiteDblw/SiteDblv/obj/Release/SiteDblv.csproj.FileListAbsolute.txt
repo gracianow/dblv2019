@@ -196,3 +196,14 @@ C:\git\dblv2019\SiteDblw\SiteDblv\obj\Release\SiteDblv.csproj.CoreCompileInputs.
 C:\git\dblv2019\SiteDblw\SiteDblv\obj\Release\SiteDblv.csproj.CopyComplete
 C:\git\dblv2019\SiteDblw\SiteDblv\obj\Release\SiteDblv.dll
 C:\git\dblv2019\SiteDblw\SiteDblv\obj\Release\SiteDblv.pdb
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\GoogleRecaptcha.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\hbehr.recaptcha.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\reCAPTCHA.MVC.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Buffers.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Memory.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Numerics.Vectors.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Buffers.xml
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Memory.xml
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Numerics.Vectors.xml
+C:\git\dblv2019\SiteDblw\SiteDblv\bin\System.Runtime.CompilerServices.Unsafe.xml

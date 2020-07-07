@@ -13,6 +13,6 @@ namespace SiteDblv.Models
         {
         }
 
-        public DbSet<Contato> Contatos { get; set; }
+        public DbSet<ContatoViewModel> Contatos { get; set; }
     }
 }

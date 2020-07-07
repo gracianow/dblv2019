@@ -17,10 +17,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="bin/ApcWebSite.dll">
-      <publishTime>05/08/2020 13:12:13</publishTime>
+      <publishTime>07/06/2020 20:21:53</publishTime>
     </File>
     <File Include="bin/ApcWebSite.pdb">
-      <publishTime>05/08/2020 13:12:13</publishTime>
+      <publishTime>07/06/2020 20:21:53</publishTime>
     </File>
     <File Include="bin/Dapper.dll">
       <publishTime>04/05/2020 12:46:02</publishTime>
@@ -1030,6 +1030,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Global.asax">
       <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
+    <File Include="robots.txt">
+      <publishTime>06/01/2020 13:40:20</publishTime>
+    </File>
     <File Include="Scripts/bootstrap.bundle.js">
       <publishTime>04/06/2020 10:45:16</publishTime>
     </File>
@@ -1357,23 +1360,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/umd/popper.min.js.map">
       <publishTime>04/06/2020 10:45:11</publishTime>
     </File>
+    <File Include="sitemap.xml">
+      <publishTime>06/01/2020 14:25:41</publishTime>
+    </File>
     <File Include="Views/Auto/Auto.cshtml">
       <publishTime>05/08/2020 12:43:52</publishTime>
     </File>
     <File Include="Views/Auto/Index.cshtml">
-      <publishTime>05/08/2020 12:50:38</publishTime>
+      <publishTime>06/07/2020 17:52:39</publishTime>
     </File>
     <File Include="Views/Condominio/Condominio.cshtml">
       <publishTime>05/08/2020 12:43:52</publishTime>
     </File>
     <File Include="Views/Condominio/Index.cshtml">
-      <publishTime>05/08/2020 12:43:52</publishTime>
+      <publishTime>06/07/2020 18:26:54</publishTime>
     </File>
     <File Include="Views/Contato/EnviarEmail.cshtml">
       <publishTime>04/10/2020 09:04:00</publishTime>
     </File>
     <File Include="Views/Contato/Index.cshtml">
-      <publishTime>05/07/2020 13:28:52</publishTime>
+      <publishTime>02/06/2020 15:17:26</publishTime>
     </File>
     <File Include="Views/Cotacao/AutoCotacao.cshtml">
       <publishTime>05/06/2020 14:28:03</publishTime>
@@ -1382,7 +1388,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Views/Cotacao/Index.cshtml">
-      <publishTime>05/08/2020 09:35:29</publishTime>
+      <publishTime>02/06/2020 15:17:43</publishTime>
     </File>
     <File Include="Views/Cotacao/_ModalEnviarEmail.cshtml">
       <publishTime>04/10/2020 09:04:00</publishTime>
@@ -1391,7 +1397,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/08/2020 12:43:52</publishTime>
     </File>
     <File Include="Views/Empresarial/Index.cshtml">
-      <publishTime>05/08/2020 12:50:19</publishTime>
+      <publishTime>06/07/2020 18:26:03</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>04/10/2020 09:04:00</publishTime>
@@ -1403,10 +1409,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/01/2020 08:10:19</publishTime>
     </File>
     <File Include="Views/Inicio/Index.cshtml">
-      <publishTime>05/07/2020 07:47:28</publishTime>
+      <publishTime>07/06/2020 20:05:38</publishTime>
     </File>
     <File Include="Views/QuemSomos/Index.cshtml">
-      <publishTime>05/08/2020 12:50:19</publishTime>
+      <publishTime>02/06/2020 15:20:49</publishTime>
     </File>
     <File Include="Views/QuemSomos/QuemSomos.cshtml">
       <publishTime>04/01/2020 08:10:19</publishTime>
@@ -1415,10 +1421,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2020 09:04:01</publishTime>
     </File>
     <File Include="Views/Shared/_Footer.cshtml">
-      <publishTime>04/27/2020 12:38:35</publishTime>
+      <publishTime>07/06/2020 20:12:37</publishTime>
     </File>
     <File Include="Views/Shared/_Footer2.cshtml">
-      <publishTime>04/28/2020 11:07:34</publishTime>
+      <publishTime>07/06/2020 20:12:57</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>05/07/2020 12:54:13</publishTime>
@@ -1430,22 +1436,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/07/2020 12:54:12</publishTime>
     </File>
     <File Include="Views/Shared/_Menu.cshtml">
-      <publishTime>05/08/2020 12:53:26</publishTime>
+      <publishTime>07/06/2020 20:09:50</publishTime>
     </File>
     <File Include="Views/Shared/_Menu2.cshtml">
-      <publishTime>05/08/2020 12:53:12</publishTime>
+      <publishTime>07/06/2020 20:07:53</publishTime>
     </File>
     <File Include="Views/Shared/_MenuInicio.cshtml">
-      <publishTime>04/30/2020 13:35:53</publishTime>
+      <publishTime>07/06/2020 20:10:25</publishTime>
     </File>
     <File Include="Views/Transporte/Index.cshtml">
-      <publishTime>05/08/2020 12:50:19</publishTime>
+      <publishTime>06/07/2020 17:57:54</publishTime>
     </File>
     <File Include="Views/Transporte/Transporte.cshtml">
       <publishTime>05/08/2020 12:43:53</publishTime>
     </File>
     <File Include="Views/Vida/Index.cshtml">
-      <publishTime>05/08/2020 12:50:19</publishTime>
+      <publishTime>06/07/2020 18:02:41</publishTime>
     </File>
     <File Include="Views/Vida/Vida.cshtml">
       <publishTime>05/08/2020 12:43:53</publishTime>
